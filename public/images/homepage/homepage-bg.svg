@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3200 1861" style="enable-background:new 0 0 3200 1861;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{mask:url(#mask-2_1_);}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path-5_4_);}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path-5_5_);}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#00254F;}
+</style>
+<pattern  y="1861" width="8" height="8" patternUnits="userSpaceOnUse" id="pattern-6" viewBox="0 -8 8 8" style="overflow:visible;">
+	<g>
+		<rect y="-8" class="st0" width="8" height="8"/>
+		<g>
+			
+				<image style="overflow:visible;enable-background:new    ;" width="8" height="8" id="image-7_1_" xlink:href="1AFB14B3DA320477.png"  transform="matrix(1 0 0 -1 8 -8)">
+			</image>
+		</g>
+	</g>
+</pattern>
+<desc>Created with Sketch.</desc>
+<g id="v1-Final-Design">
+	<g id="Homepage-Background" transform="translate(-0.016160, 0.000000)">
+		<g id="Group-36" transform="translate(0.016160, 0.000000)">
+			<g id="Mask">
+				<rect id="path-1_1_" y="0" class="st1" width="3200" height="1861"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="2" width="3315" height="1818.5">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="0" y="2" width="3315" height="1818.5" id="mask-2_1_">
+				<g class="st2">
+					<rect id="path-1_2_" y="0" class="st1" width="3200" height="1861"/>
+				</g>
+			</mask>
+			<g id="Combined-Shape" class="st3">
+				<g transform="translate(0.000000, 2.000000)">
+					
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1302.5919" y1="1348.5061" x2="1301.3318" y2="1348.9574" gradientTransform="matrix(3195.0337 0 0 -1818.4752 -4158512 2453431.75)">
+						<stop  offset="0" style="stop-color:#FF00E0"/>
+						<stop  offset="0" style="stop-color:#FF00DD"/>
+						<stop  offset="1" style="stop-color:#FF0029"/>
+					</linearGradient>
+					<path class="st4" d="M3315,0l0,1797c-162.7-14.5-471.3-38-779.8-39.5c-4.5,0-9.1,0-13.6,0l0,0l-6.9,0
+						c-223.6-0.1-521.4,15.2-801,30.6c-276.4,15.2-535,30.3-686.5,30.5l0,0l-4.6,0c-3.1,0-6.1,0-9.1,0
+						c-273.4-1.4-672.6-13-893.5-55.3L120,0H3315z"/>
+					<g>
+						<g>
+							<path id="path-5" class="st1" d="M3200,0l0,1790.8c-160.6-19-463-49.4-767.5-51.8l0,0l-13.5-0.1l-3.4,0c-3.4,0-6.8,0-10.3,0
+								l0,0l-6.9,0c-221.6-0.1-516.1,14.9-793.5,30.1l0,0l-8.7,0.5l-8.3,0.5c-273.7,15-529.1,29.9-679.2,30.1l0,0l-4.7,0
+								c-1.5,0-3.1,0-4.6,0l0,0l-4.5,0l-8.8,0c-273.6-1.6-667.2-13.4-886.1-55.4L0,0H3200z"/>
+						</g>
+						<g>
+							
+								<linearGradient id="path-5_4_" gradientUnits="userSpaceOnUse" x1="1302.0931" y1="1349.0314" x2="1302.0931" y2="1348.1726" gradientTransform="matrix(3200.012 0 0 -1800 -4165113.5 2428510.75)">
+								<stop  offset="0" style="stop-color:#FFFFFF"/>
+								<stop  offset="1" style="stop-color:#333333;stop-opacity:0.5"/>
+							</linearGradient>
+							<path id="path-5_1_" class="st5" d="M3200,0l0,1790.8c-160.6-19-463-49.4-767.5-51.8l0,0l-13.5-0.1l-3.4,0
+								c-3.4,0-6.8,0-10.3,0l0,0l-6.9,0c-221.6-0.1-516.1,14.9-793.5,30.1l0,0l-8.7,0.5l-8.3,0.5c-273.7,15-529.1,29.9-679.2,30.1
+								l0,0l-4.7,0c-1.5,0-3.1,0-4.6,0l0,0l-4.5,0l-8.8,0c-273.6-1.6-667.2-13.4-886.1-55.4L0,0H3200z"/>
+						</g>
+						<g>
+							<pattern  id="path-5_5_" xlink:href="#pattern-6" patternTransform="matrix(1 0 0 -1 -14 -17417.3301)">
+							</pattern>
+							<path id="path-5_2_" class="st6" d="M3200,0l0,1790.8c-160.6-19-463-49.4-767.5-51.8l0,0l-13.5-0.1l-3.4,0
+								c-3.4,0-6.8,0-10.3,0l0,0l-6.9,0c-221.6-0.1-516.1,14.9-793.5,30.1l0,0l-8.7,0.5l-8.3,0.5c-273.7,15-529.1,29.9-679.2,30.1
+								l0,0l-4.7,0c-1.5,0-3.1,0-4.6,0l0,0l-4.5,0l-8.8,0c-273.6-1.6-667.2-13.4-886.1-55.4L0,0H3200z"/>
+						</g>
+						<g>
+							<path id="path-5_3_" class="st7" d="M3200,0l0,1790.8c-160.6-19-463-49.4-767.5-51.8l0,0l-13.5-0.1l-3.4,0
+								c-3.4,0-6.8,0-10.3,0l0,0l-6.9,0c-221.6-0.1-516.1,14.9-793.5,30.1l0,0l-8.7,0.5l-8.3,0.5c-273.7,15-529.1,29.9-679.2,30.1
+								l0,0l-4.7,0c-1.5,0-3.1,0-4.6,0l0,0l-4.5,0l-8.8,0c-273.6-1.6-667.2-13.4-886.1-55.4L0,0H3200z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

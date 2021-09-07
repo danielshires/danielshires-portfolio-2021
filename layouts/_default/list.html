@@ -1,0 +1,43 @@
+{{ define "head" }}
+{{ partial "head" . }}
+{{end}}
+
+{{ define "header" }}
+{{ partial "header-light" (dict "Kind" .Kind "Template" "List") }}
+{{end}}
+
+
+{{ define "main" }}
+
+<section class="hero-single d-flex flex-column justify-content-center align-items-center position-relative mb-1">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="">{{ .Params.pageDescription }}</p>
+            </div>
+        </div>
+
+</section>
+
+<section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="mt-5">
+                    {{ partial "work/card-column-wip" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "contact" . }}
+{{ partial "footer" . }}
+{{end}}
+
+

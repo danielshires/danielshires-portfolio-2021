@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Design on My New Hugo Site</title>
+    <link>/work/digital-design/</link>
+    <description>Recent content in Digital Design on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Sep 2018 08:53:47 -0500</lastBuildDate><atom:link href="/work/digital-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maso Fitness</title>
+      <link>/work/digital-design/maso-fitness/</link>
+      <pubDate>Sun, 16 Sep 2018 08:53:47 -0500</pubDate>
+      
+      <guid>/work/digital-design/maso-fitness/</guid>
+      <description>Explore Visual Research As part of the concept development, I did a competitor and brand analysis based on the clients preference and inspiration for the look and feel.
+  Explore Logo Development I created a number of directions for the logo, trying different variations from simple to complex.
+  Explore Logo Design The concept for final logo mark was to emphasise the fluid and expressive motions in exercise. Keywords such as ‘spring’, ‘energy’ and ‘flow’ were selected in the brainstorming phase.</description>
+    </item>
+    
+  </channel>
+</rss>

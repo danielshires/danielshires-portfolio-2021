@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-08-09T16:46:34+10:00</lastmod>
+  </url><url>
+    <loc>/work/case-studies/</loc>
+    <lastmod>2018-09-16T08:53:47-05:00</lastmod>
+  </url><url>
+    <loc>/work/digital-design/</loc>
+    <lastmod>2018-09-16T08:53:47-05:00</lastmod>
+  </url><url>
+    <loc>/work/digital-design/maso-fitness/</loc>
+    <lastmod>2018-09-16T08:53:47-05:00</lastmod>
+  </url><url>
+    <loc>/work/case-studies/mcs/</loc>
+    <lastmod>2018-09-16T08:53:47-05:00</lastmod>
+  </url><url>
+    <loc>/work/</loc>
+    <lastmod>2018-09-16T08:53:47-05:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,14 @@
+<div class="col-lg-12">
+    {{ range .Page.Params.resources }}
+    {{if $.Get "figures" }}
+    <figure>
+        <img src="{{.src}}" alt="{{.alt}}" />
+        <figcaption>
+            <p>{{.alt}}</p>
+        </figcaption>
+    </figure>
+    {{else}}
+    <img src="{{.src}}" alt="{{.alt}}">
+    {{end}}
+    {{end}}
+</div>

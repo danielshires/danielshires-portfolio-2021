@@ -1,0 +1,17 @@
+{{ define "head" }}
+{{ partial "head" . }}
+{{end}}
+
+{{ define "header" }}
+{{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+{{end}}
+
+
+{{ define "main" }}
+{{ partial "homepage" . }}
+{{ partial "contact" . }}
+{{end}}
+
+{{ define "footer" }}
+{{ partial "footer" . }}
+{{end}}

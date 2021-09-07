@@ -1,0 +1,25 @@
+<section class="hero-single container-fluid d-flex flex-column justify-content-center align-items-center position-relative mb-1">
+    <div class="container">
+        <div class="row mb-0 mb-md-5">
+            <div class="col-12 mb-md-4 mb-5">
+                <!-- <h5 class="pb-3">{{ .Title }}</h5> -->
+                <h1>{{ .Params.description }}</h1>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-lg-4 col-sm-12 p-0 pb-2 m-0">
+                <h6 class="">Role</h6>
+                <h5>{{ .Params.tagRole }}</h5>
+            </div>
+            <div class="col-lg-4 col-sm-12 p-0 pb-2 m-0">
+                <h6 class="">Tools</h6>
+                <h5>{{ .Params.tagTools }}</h5>
+            </div>
+            <div class="col-lg-4 col-sm-12 p-0 pb-2 m-0">
+                <h6 class="">Duration</h6>
+                <h5>{{ .Params.tagDuration }}</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
