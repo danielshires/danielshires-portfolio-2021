@@ -1012,6 +1012,12 @@ section {
   z-index: 0;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 .hero h1 {
   background: -webkit-linear-gradient(#fff, #FFf);
   background-clip: text;
@@ -1037,12 +1043,6 @@ section {
 
 .hero .hero-text-p {
   margin: 1.5rem auto 2.5rem auto;
-}
-
-@media (min-width: 1600px) {
-  .hero .hero-text-p {
-    width: 75%;
-  }
 }
 
 .hero .hero-cta {

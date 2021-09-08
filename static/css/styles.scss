@@ -1101,6 +1101,10 @@ section {
     color: white;
     z-index: 0;
 
+    @include media-breakpoint-up(md) {
+        height: 100vh;
+    }
+
     h1 {
         background: -webkit-linear-gradient(#fff, #FFf);
         background-clip: text;
@@ -1127,10 +1131,6 @@ section {
 
     .hero-text-p {
         margin: 1.5rem auto 2.5rem auto;
-
-        @include media-breakpoint-up(xxxl) {
-            width: 75%;
-        }
     }
 
     .hero-cta {
