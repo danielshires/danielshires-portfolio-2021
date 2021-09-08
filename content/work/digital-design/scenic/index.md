@@ -1,30 +1,44 @@
 ---
 type: page
 layout: "large-image"
-title: "Maso Fitness"
-pageTitle: "Maso Fitness"
-description: "Getting people fit in Sydney's Inner West"
+title: "Scenic Luxury Cruises & Tours"
+pageTitle: "Scenic Luxury Cruises & Tours"
+description: "Moments of wonder for an industry leading cruise operator"
 date: 2018-09-16T08:53:47-05:00
-draft: false
+draft: true
 keywords: "Digital Design"
 readingTime: ""
 heroImage: /work/digital-design/images/maso-fitness/Maso-Project-Tiles-1.jpg
-heroAlt: "Maso Fitness"
+heroAlt: "Scenic"
 tagRole: "Digital Design"
-tagDuration: "4 Weeks (Dec 20')"
+tagDuration: "2019-2020)"
 tagTools: "Illustrator, Figma, Wordpress"
 ---
 
 <!-- Moodboards -->
-{{< rawhtml >}}
+<!-- {{< rawhtml >}}
 <div class="col-12 col-md-6 offset-md-3 pb-5 pt-5 text-center d-flex justify-content-center flex-column">
 <h6 class="m-0">Explore</h6>
 <h4 class="m-0">Visual Research</h4>
 <p>As part of the concept development, I did a competitor and brand analysis based on the clients preference and inspiration for the look and feel.</p>
 </div>
-{{< /rawhtml >}}
+{{< /rawhtml >}} -->
 
-{{< figure src="/work/digital-design/images/maso-fitness/maso-concept.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-2.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-3.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-4.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-5.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+
+
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-6.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-7.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-8.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-9.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-10.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-11.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-12.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-13.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
+{{< figure src="/work/digital-design/images/scenic/Scenic-Project-Tiles-14.jpg" alt="My Care Space" class="pb-5 align-centre" >}}
 
 
 <!-- Logo Development -->
