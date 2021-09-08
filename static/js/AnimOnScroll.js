@@ -1,225 +1,26 @@
-/**
- * animOnScroll.js v1.0.0
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
+AOS.init();
 
-;( function( window ) {
-	
-	'use strict';
-	
-	var docElem = window.document.documentElement;
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
-	function getViewportH() {
-		var client = docElem['clientHeight'],
-			inner = window['innerHeight'];
-		
-		if( client < inner )
-			return inner;
-		else
-			return client;
-	}
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
-
-	// http://stackoverflow.com/a/5598797/989439
-	function getOffset( el ) {
-		var offsetTop = 0, offsetLeft = 0;
-		do {
-			if ( !isNaN( el.offsetTop ) ) {
-				offsetTop += el.offsetTop;
-			}
-			if ( !isNaN( el.offsetLeft ) ) {
-				offsetLeft += el.offsetLeft;
-			}
-		} while( el = el.offsetParent )
-
-		return {
-			top : offsetTop,
-			left : offsetLeft
-		}
-	}
-
-	function inViewport( el, h ) {
-		var elH = el.offsetHeight,
-			scrolled = scrollY(),
-			viewed = scrolled + getViewportH(),
-			elTop = getOffset(el).top,
-			elBottom = elTop + elH,
-			// if 0, the element is considered in the viewport as soon as it enters.
-			// if 1, the element is considered in the viewport only when it's fully inside
-			// value in percentage (1 >= h >= 0)
-			h = h || 0;
-
-		return (elTop + elH * h) <= viewed && (elBottom - elH * h) >= scrolled;
-	}
-
-	function extend( a, b ) {
-		for( var key in b ) { 
-			if( b.hasOwnProperty( key ) ) {
-				a[key] = b[key];
-			}
-		}
-		return a;
-	}
-
-	function onScrollHandler() {
-		var self = this;
-		if( !this.didScroll ) {
-			this.didScroll = true;
-			setTimeout( function() { self._scrollPage(); }, 60 );
-		}
-	};
-
-	function AnimOnScroll( el, options ) {	
-		this.el = el;
-		this.options = extend( this.defaults, options );
-		
-		this._onScrollFn = onScrollHandler.bind( this );
-
-		this._init();
-	}
-
-	// IE Fallback for array prototype slice
-	if(navigator.appVersion.indexOf('MSIE 8') > 0) {
-		var _slice = Array.prototype.slice;
-		Array.prototype.slice = function() {
-		  if(this instanceof Array) {
-			return _slice.apply(this, arguments);
-		  } else {
-			var result = [];
-			var start = (arguments.length >= 1) ? arguments[0] : 0;
-			var end = (arguments.length >= 2) ? arguments[1] : this.length;
-			for(var i=start; i<end; i++) {
-			  result.push(this[i]);
-			}
-			return result;
-		  }
-		};
-	  }
-
-	// Function.prototype.bind polyfill
-	if( !Function.prototype.bind ) {
-		Function.prototype.bind = function( oThis ) {
-			if( typeof this !== 'function' ) {
-				// closest thing possible to the ECMAScript 5
-				// internal IsCallable function
-				throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
-			}
-
-			var aArgs   = Array.prototype.slice.call( arguments, 1 ),
-				fToBind = this,
-				fNOP    = function() {},
-				fBound  = function() {
-					return fToBind.apply( this instanceof fNOP
-						? this
-						: oThis,
-						aArgs.concat( Array.prototype.slice.call( arguments ) ) );
-				};
-
-			fNOP.prototype = this.prototype;
-			fBound.prototype = new fNOP();
-
-			return fBound;
-		};
-	}
-
-	AnimOnScroll.prototype = {
-		defaults : {
-			// Minimum and a maximum duration of the animation (random value is chosen)
-			minDuration : 0,
-			maxDuration : 0,
-			// The viewportFactor defines how much of the appearing item has to be visible in order to trigger the animation
-			// if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport. 
-			// If we were to use the value of 1, the animation would only be triggered when we see all of the item in the viewport (100% of it)
-			viewportFactor : 0
-		},
-		_init : function() {
-			this.items = Array.prototype.slice.call( document.querySelectorAll( '#' + this.el.id + ' > li' ) );
-			this.itemsCount = this.items.length;
-			this.itemsRenderedCount = 0;
-			this.didScroll = false;
-
-			var self = this;
-
-			imagesLoaded( this.el, function() {
-				
-				// initialize masonry
-				new Masonry( self.el, {
-					itemSelector: 'li',
-					transitionDuration : 0
-				} );
-				
-				if( Modernizr.cssanimations ) {
-					// the items already shown...
-					self.items.forEach( function( el, i ) {
-						if( inViewport( el ) ) {
-							self._checkTotalRendered();
-							classie.add( el, 'shown' );
-						}
-					} );
-
-					// animate on scroll the items inside the viewport
-					window.addEventListener( 'scroll', self._onScrollFn, false );
-					window.addEventListener( 'resize', function() {
-						self._resizeHandler();
-					}, false );
-				}
-
-			});
-		},
-		_scrollPage : function() {
-			var self = this;
-			this.items.forEach( function( el, i ) {
-				if( !classie.has( el, 'shown' ) && !classie.has( el, 'animate' ) && inViewport( el, self.options.viewportFactor ) ) {
-					setTimeout( function() {
-						var perspY = scrollY() + getViewportH() / 2;
-						self.el.style.WebkitPerspectiveOrigin = '50% ' + perspY + 'px';
-						self.el.style.MozPerspectiveOrigin = '50% ' + perspY + 'px';
-						self.el.style.perspectiveOrigin = '50% ' + perspY + 'px';
-
-						self._checkTotalRendered();
-
-						if( self.options.minDuration && self.options.maxDuration ) {
-							var randDuration = ( Math.random() * ( self.options.maxDuration - self.options.minDuration ) + self.options.minDuration ) + 's';
-							el.style.WebkitAnimationDuration = randDuration;
-							el.style.MozAnimationDuration = randDuration;
-							el.style.animationDuration = randDuration;
-						}
-						
-						classie.add( el, 'animate' );
-					}, 25 );
-				}
-			});
-			this.didScroll = false;
-		},
-		_resizeHandler : function() {
-			var self = this;
-			function delayed() {
-				self._scrollPage();
-				self.resizeTimeout = null;
-			}
-			if ( this.resizeTimeout ) {
-				clearTimeout( this.resizeTimeout );
-			}
-			this.resizeTimeout = setTimeout( delayed, 1000 );
-		},
-		_checkTotalRendered : function() {
-			++this.itemsRenderedCount;
-			if( this.itemsRenderedCount === this.itemsCount ) {
-				window.removeEventListener( 'scroll', this._onScrollFn );
-			}
-		}
-	}
-
-	// add to global namespace
-	window.AnimOnScroll = AnimOnScroll;
-
-} )( window );
+});
