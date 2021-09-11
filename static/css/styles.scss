@@ -96,24 +96,28 @@ sans-serif;
 
 // Breakpoints
 
-/* set the overriding variables */
-$grid-breakpoints: (xxxs: 0,
-    xxs: 376px,
-    xs: 568px,
-    sm: 667px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1440px,
-    xxxl: 1600px);
-$container-max-widths: (xxxs: 0,
-    xxs: 376px, f xs: 568px,
-    sm: 667px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1440px,
-    xxxl: 1920px);
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
 
 // Colors
 
@@ -300,7 +304,7 @@ h4 {
     margin-bottom: 0.5rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     @include media-breakpoint-up(xl) {
@@ -355,7 +359,7 @@ p {
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 1.125rem;
+        font-size: 1.2rem;
         margin: 1.5rem 0 1.5rem 0;
     }
 }
@@ -440,7 +444,7 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: $primary-gradient;
-    border-bottom: 1px solid transparent;
+    border-bottom: 0px solid transparent;
 
 
     &:hover,
@@ -453,7 +457,7 @@ a {
         -webkit-background-clip: text;
         -webkit-text-fill-color: $primary-gradient;
         text-decoration: none;
-        border-bottom: 1px solid $primary-pink;
+        border-bottom: 0px solid transparent;
     }
 }
 
@@ -494,18 +498,9 @@ header {
 }
 
 
-.navbar {
-    position: relative;
-}
-
-.navbar-toggler-icon {
-    width: auto;
-    height: auto;
-}
-
 .navbar-brand {
     color: rgba(255, 255, 255, 1);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     transform: translateY(0em);
     transition: all 0.3s ease-out;
     font-family: $primary-font-medium;
@@ -521,6 +516,10 @@ header {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.4rem;
     }
 
 }
@@ -686,7 +685,6 @@ button {
 }
 
 .btn {
-
     @include media-breakpoint-down(sm) {
         width: 100%;
     }
@@ -1092,25 +1090,21 @@ section {
 // Hero Section
 
 .hero-single {
-    margin-top: 4rem;
+    height: 90vh;
+    width: 100%;
 }
 
 .hero {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     color: white;
     z-index: 0;
-
-    @include media-breakpoint-up(md) {
-        height: 100vh;
-    }
 
     h1 {
         background: -webkit-linear-gradient(#fff, #FFf);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
 
         span {
             background: $primary-gradient;
@@ -1120,36 +1114,9 @@ section {
         }
     }
 
-    h3 {
-        color: rgba(255, 255, 255, 0.5);
+    p {
+        max-width: 768px;
     }
-
-    h5 {
-        margin-bottom: 1rem;
-
-    }
-
-    .hero-text-p {
-        margin: 1.5rem auto 2.5rem auto;
-    }
-
-    .hero-cta {
-        position: absolute;
-        bottom: 10%;
-        width: 100%;
-        margin: auto;
-
-        @include media-breakpoint-up(md) {
-            bottom: 10%;
-        }
-
-
-        @include media-breakpoint-up(lg) {
-            position: relative;
-            bottom: 0;
-        }
-    }
-
 }
 
 .hero-links {
@@ -1178,25 +1145,6 @@ h4.job-title {
         color: $primary-gradient;
         opacity: 0.5;
     }
-}
-
-// Call to action
-
-
-a.call-to-action {
-    background: $primary-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration-color: #FF00E0;
-    color: #FF00E0;
-    text-decoration: none;
-    color: $primary-text-color;
-
-    &:hover {
-        border-bottom: 1px solid #FF00E0;
-    }
-
 }
 
 

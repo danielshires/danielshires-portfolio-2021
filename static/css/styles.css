@@ -42,7 +42,6 @@
   font-style: normal;
 }
 
-/* set the overriding variables */
 .delay-1 {
   -webkit-animation-delay: .25s;
           animation-delay: .25s;
@@ -133,7 +132,7 @@ h1 {
   line-height: 120%;
 }
 
-@media (min-width: 667px) {
+@media (min-width: 576px) {
   h1 {
     font-size: 2.75rem;
   }
@@ -205,7 +204,7 @@ h4 {
 
 @media (min-width: 768px) {
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -269,7 +268,7 @@ p {
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin: 1.5rem 0 1.5rem 0;
   }
 }
@@ -354,7 +353,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
-  border-bottom: 1px solid transparent;
+  border-bottom: 0px solid transparent;
 }
 
 a:hover, a:active, a:focus {
@@ -367,7 +366,7 @@ a:hover, a:active, a:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   text-decoration: none;
-  border-bottom: 1px solid #FF00E0;
+  border-bottom: 0px solid transparent;
 }
 
 p a {
@@ -403,18 +402,9 @@ header {
   transition: all 0.3s ease-out;
 }
 
-.navbar {
-  position: relative;
-}
-
-.navbar-toggler-icon {
-  width: auto;
-  height: auto;
-}
-
 .navbar-brand {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   -webkit-transform: translateY(0em);
           transform: translateY(0em);
   -webkit-transition: all 0.3s ease-out;
@@ -435,6 +425,12 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
 }
 
 .navbar-brand-light {
@@ -964,19 +960,14 @@ section {
   padding-top: 4rem;
   padding-bottom: 4rem;
   min-height: 25vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 1200px) {
   section {
     padding-top: 6rem;
     padding-bottom: 6rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  section {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
   }
 }
 
@@ -1002,20 +993,15 @@ section {
 }
 
 .hero-single {
-  margin-top: 4rem;
+  height: 90vh;
+  width: 100%;
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   color: white;
   z-index: 0;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    height: 100vh;
-  }
 }
 
 .hero h1 {
@@ -1033,47 +1019,14 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.hero h3 {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.hero h5 {
-  margin-bottom: 1rem;
-}
-
-.hero .hero-text-p {
-  margin: 1.5rem auto 2.5rem auto;
-}
-
-.hero .hero-cta {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .hero .hero-cta {
-    bottom: 10%;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero .hero-cta {
-    position: relative;
-    bottom: 0;
-  }
+.hero p {
+  max-width: 768px;
 }
 
 .hero-links a {
   color: white;
   font-size: 1rem;
-}
-
-@media (min-width: 376px) {
-  .hero-links a {
-    font-size: 1.125rem;
-  }
+  font-size: 1.125rem;
 }
 
 @media (min-width: 768px) {
@@ -1086,23 +1039,6 @@ h4.job-title span {
   font-family: "Circular", Arial, Helvetica, sans-serif;
   color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   opacity: 0.5;
-}
-
-a.call-to-action {
-  background: -webkit-gradient(linear, left top, right top, from(#FF00E0), to(#FF0029));
-  background: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-decoration-color: #FF00E0;
-          text-decoration-color: #FF00E0;
-  color: #FF00E0;
-  text-decoration: none;
-  color: #0F1317;
-}
-
-a.call-to-action:hover {
-  border-bottom: 1px solid #FF00E0;
 }
 
 #mycarespace {
