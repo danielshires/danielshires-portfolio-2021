@@ -96,28 +96,24 @@ sans-serif;
 
 // Breakpoints
 
-$grid-columns:      12;
+$grid-columns: 12;
 $grid-gutter-width: 30px;
 
-$grid-breakpoints: (
-  // Extra small screen / phone
-  xs: 0,
-  // Small screen / phone
-  sm: 576px,
-  // Medium screen / tablet
-  md: 768px,
-  // Large screen / desktop
-  lg: 992px,
-  // Extra large screen / wide desktop
-  xl: 1200px
-);
+$grid-breakpoints: ( // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px);
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-);
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px);
 
 // Colors
 
@@ -1090,7 +1086,7 @@ section {
 // Hero Section
 
 .hero-single {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -1133,6 +1129,27 @@ section {
     }
 }
 
+
+// Icons
+
+.down-arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-100px);
+    font-size: 14px;
+    margin: 0;
+
+    img {
+        width: 16px;
+    }
+}
+
+.down-arrow_text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 // Work History
 

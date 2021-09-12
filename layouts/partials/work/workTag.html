@@ -1,12 +1,10 @@
 <section class="hero-single position-relative d-flex flex-column justify-content-center align-items-center">
-    <div class="container">
+    <div class="container d-">
         <div class="row mb-0 mb-md-5">
             <div class="col-12 mb-3 px-4">
                 <h5 class="mb-3">{{ .Title }}</h5>
                 <h1>{{ .Params.description }}</h1>
             </div>
-        </div>
-        <div class="row p-0 m-0">
             <div class="col-lg-4 col-12 p-0 pb-2 m-0">
                 <h6 class="">Role</h6>
                 <h5>{{ .Params.tagRole }}</h5>
@@ -18,6 +16,13 @@
             <div class="col-lg-4 col-12 p-0 pb-2 m-0">
                 <h6 class="">Duration</h6>
                 <h5>{{ .Params.tagDuration }}</h5>
+            </div>
+        </div>
+        <div class="row down-arrow">
+            <div class="col-12">
+                <div class="down-arrow_text">scroll down for more</div>
+                <img src="/images/icons/down-arrow.png" alt="Down arrow">
+
             </div>
         </div>
     </div>
