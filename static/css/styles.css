@@ -1019,10 +1019,6 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.hero p {
-  max-width: 768px;
-}
-
 .hero-links a {
   color: white;
   font-size: 1rem;
