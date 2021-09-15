@@ -298,6 +298,10 @@ li::marker {
   font-size: 1.25rem;
 }
 
+footer p .footer-text {
+  font-size: 16px;
+}
+
 label {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -673,15 +677,6 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
   border: none;
 }
 
-a.coming-soon {
-  opacity: 0.3;
-}
-
-.card-link + .card-link {
-  margin: 0;
-  cursor: default;
-}
-
 .card-columns {
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
@@ -738,13 +733,11 @@ a.coming-soon {
 }
 
 .portfolio-card {
-  color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  transition: 0.1s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.2s box-shadow, 0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
-  -webkit-transform: translateY(0rem);
-          transform: translateY(0rem);
+  border-radius: 1rem;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .portfolio-card h6 {
@@ -754,11 +747,41 @@ a.coming-soon {
 }
 
 .portfolio-card img {
-  height: auto;
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
   width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 1rem;
 }
 
-/* */
+.portfolio-card:hover img,
+.portfolio-card:focus img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-radius: 1rem;
+}
+
+.coming-soon {
+  opacity: 0.3;
+}
+
+.coming-soon img {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.coming-soon:hover img,
+.coming-soon:focus img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 1rem;
+}
+
 @media (min-width: 768px) {
   .testimonial-text {
     text-align: left;
@@ -973,22 +996,27 @@ a.coming-soon {
 
 section {
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   min-height: 25vh;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   section {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
+@media (min-width: 992px) {
+  section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
 .background-image {
-  background-image: url(/images/homepage/homepage-bg.svg);
+  background-image: url(/images/homepage/homepage-bg-new.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1000,7 +1028,7 @@ section {
 }
 
 .background-image-testimonial {
-  background-image: url(/images/homepage/homepage-bg.svg);
+  background-image: url(/images/homepage/homepage-bg-new.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1049,7 +1077,7 @@ section {
 
 .down-arrow {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 50%;
   width: 200px;
   -webkit-transform: translateX(-100px);

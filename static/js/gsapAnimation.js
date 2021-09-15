@@ -5,8 +5,8 @@ animationFunc = function () {
 
     ani.from("nav.nav-animation", {
         scrollTrigger: "nav.nav-animation",
-        delay: 1,
-        duration: 0.5,
+        delay: 0.5,
+        duration: 0.2,
         opacity: 0,
         y: -10,
         ease: "power4.out"
@@ -14,7 +14,7 @@ animationFunc = function () {
 
     ani.from(".hero-animation", {
         scrollTrigger: ".hero-animation",
-        duration: 0.5,
+        duration: 0.4,
         delay: 0,
         opacity: 0,
         y: 30,
@@ -31,7 +31,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up", {
         scrollTrigger: {
             trigger: ".fade-up",
-            start: "20px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
@@ -45,7 +45,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up-cards", {
         scrollTrigger: {
             trigger: ".fade-up-cards",
-            start: "0px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
@@ -59,7 +59,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up-portfolio", {
         scrollTrigger: {
             trigger: ".fade-up-portfolio",
-            start: "20px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
@@ -88,7 +88,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up-tesimonial", {
         scrollTrigger: {
             trigger: ".fade-up-tesimonial",
-            start: "20px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
@@ -102,7 +102,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up-services", {
         scrollTrigger: {
             trigger: ".fade-up-services",
-            start: "-300px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
@@ -116,7 +116,7 @@ fadeUpFunction = function () {
     gsap.from(".fade-up-testimonial-made", {
         scrollTrigger: {
             trigger: ".fade-up-testimonial-made",
-            start: "20px 80%",
+            start: "0px 100%",
             end: "",
             toggleActions: "restart none none reset",
             markers: false,
