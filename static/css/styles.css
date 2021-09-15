@@ -3,6 +3,7 @@
   src: url("/fonts/Px-Grotesk-Regular.woff2") format("woff2"), url("../../../Respources/fonts/Px-Grotesk-Regular.woff") format("woff"), url("../../../Resfonts/fonts/Px-Grotesk-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("/fonts/Px-Grotesk-Bold.woff2") format("woff2"), url("/fonts/Px-Grotesk-Bold.woff") format("woff"), url("/fonts/Px-Grotesk-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   /* Legacy iOS */
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -30,6 +33,7 @@
   /* Legacy iOS */
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +44,7 @@
   /* Legacy iOS */
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 .delay-1 {
@@ -393,7 +398,7 @@ p a {
 }
 
 header {
-  height: 100px;
+  height: auto;
   top: 0;
   left: 0;
   width: 100%;

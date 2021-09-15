@@ -44,7 +44,6 @@ const fadeBox = function () {
 
 }
 
-
 fadeBox()
 toggleHeader()
 

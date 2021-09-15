@@ -4,16 +4,19 @@
 {{end }}
 
 <body>
-     
+
 
      {{ block "header" . }}
      {{end }}
+
      {{ block "main" . }}
      {{end }}
+
      {{ block "footer" . }}
      {{end }}
 
-     {{ partial "scripts" . }}
+     {{ block "scripts" . }}
+     {{end}}
 
 </body>
 

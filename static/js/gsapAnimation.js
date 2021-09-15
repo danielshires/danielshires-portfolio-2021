@@ -70,20 +70,20 @@ fadeUpFunction = function () {
         ease: "power4.out"
     })
 
-    gsap.from(".fade-up-cta", {
-        scrollTrigger: {
-            trigger: ".fade-up-cta",
-            start: "20px 80%",
-            end: "",
-            toggleActions: "restart none none reset",
-            markers: false,
-            scrub: true,
-        },
-        duration: 3,
-        opacity: 0,
-        x: -30,
-        ease: "power4.out"
-    })
+    // gsap.from(".fade-up-cta", {
+    //     scrollTrigger: {
+    //         trigger: ".fade-up-cta",
+    //         start: "20px 80%",
+    //         end: "",
+    //         toggleActions: "restart none none reset",
+    //         markers: false,
+    //         scrub: true,
+    //     },
+    //     duration: 3,
+    //     opacity: 0,
+    //     x: -30,
+    //     ease: "power4.out"
+    // })
 
     gsap.from(".fade-up-tesimonial", {
         scrollTrigger: {
@@ -127,47 +127,47 @@ fadeUpFunction = function () {
         ease: "power4.out"
     })
 
-    gsap.from(".fade-up-job-title", {
-        scrollTrigger: {
-            trigger: ".fade-up-job-title",
-            start: "20px 80%",
-            end: "",
-            toggleActions: "restart none none reset",
-            markers: false,
-        },
-        duration: 3,
-        opacity: 0,
-        y: 30,
-        ease: "power4.out"
-    })
+    // gsap.from(".fade-up-job-title", {
+    //     scrollTrigger: {
+    //         trigger: ".fade-up-job-title",
+    //         start: "20px 80%",
+    //         end: "",
+    //         toggleActions: "restart none none reset",
+    //         markers: false,
+    //     },
+    //     duration: 3,
+    //     opacity: 0,
+    //     y: 30,
+    //     ease: "power4.out"
+    // })
 
-    gsap.from(".fade-up-job-list", {
-        scrollTrigger: {
-            trigger: ".fade-up-job-list",
-            start: "20px 80%",
-            end: "",
-            toggleActions: "restart none none reset",
-            markers: false,
-        },
-        duration: 3,
-        opacity: 0,
-        y: 30,
-        ease: "power4.out"
-    })
+    // gsap.from(".fade-up-job-list", {
+    //     scrollTrigger: {
+    //         trigger: ".fade-up-job-list",
+    //         start: "20px 80%",
+    //         end: "",
+    //         toggleActions: "restart none none reset",
+    //         markers: false,
+    //     },
+    //     duration: 3,
+    //     opacity: 0,
+    //     y: 30,
+    //     ease: "power4.out"
+    // })
 
-    gsap.from(".fade-up-footer", {
-        scrollTrigger: {
-            trigger: ".fade-up-footer",
-            start: "20px 80%",
-            end: "",
-            toggleActions: "restart none none reset",
-            markers: false,
-        },
-        duration: 3,
-        opacity: 0,
-        y: 30,
-        ease: "power4.out"
-    })
+    // gsap.from(".fade-up-footer", {
+    //     scrollTrigger: {
+    //         trigger: ".fade-up-footer",
+    //         start: "20px 80%",
+    //         end: "",
+    //         toggleActions: "restart none none reset",
+    //         markers: false,
+    //     },
+    //     duration: 3,
+    //     opacity: 0,
+    //     y: 30,
+    //     ease: "power4.out"
+    // })
 
 }
 
