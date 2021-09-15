@@ -15,7 +15,7 @@ tagTools: " Figma, Miro, Zoom"
 
 ## 📋 Overview
 
-### The Challenge 
+#### The Challenge 
 
 __MyCareSpace__ is a national online platform that connects people living with a disability, their families and carers, with easy to read information about the NDIS.
 
@@ -31,7 +31,7 @@ The team had a problem. They were unsure if people found the website easy to use
 
 {{< figure src="/work/case-studies/images/mcs/mcs-homepage-old.jpg" alt="MyCareSpace Homepage" class="pt-3 pb-5 align-centre" title="The MyCareSpace homepage.">}}
 
-### The Goal
+#### The Goal
 
 The primary goal was to review the existing UX flow for connecting users with My Care Space through the 'VIP' contact form. 
 
@@ -45,20 +45,19 @@ We also needed to understand more about the users of MyCareSapce, their feelings
 </div>
 {{< /rawhtml >}}  
  
+<!-- #### The Process
 
-### The Process
-
-For this project, our team of five used the double diamond technique to help guide our decisions and to help provide a framework for developing a human-centred design.
+For this project, our team of five used the double diamond technique to help guide our decisions and to help provide a framegwork for developing a human-centred design.
 
 
-{{< figure src="https://images.squarespace-cdn.com/content/v1/5fe0857f6394b41d64288ee7/1619313221196-BZFBUHRB5HCHQPSOHJVX/double+diamond-01.png" alt="My Care Space" class="pt-3 pb-5 align-centre">}}
+{{< figure src="https://images.squarespace-cdn.com/content/v1/5fe0857f6394b41d64288ee7/1619313221196-BZFBUHRB5HCHQPSOHJVX/double+diamond-01.png" alt="My Care Space" class="pt-3 pb-5 align-centre">}} -->
 
 
 ***
 
 ## 🔎 Discover
 
-### Research
+#### Research
 
 For the discovery phase, we decided to run 1-2-1 user interviews to provide us with direct insights from users. 
 
@@ -78,7 +77,7 @@ Our goals were:
 
 ## 💭 Define 
 
-### Organising Data
+#### Organising Data
 
 After the research phase, it was time to bring together all of our findings and generate insights to help drive the next phase of the project.
 
@@ -86,7 +85,7 @@ We made notes on a shared Miro board and used affinity mapping to help organise 
 
 {{< figure src="/work/case-studies/images/mcs/mcs-affinity-map.png" alt="My Care Space" class="pt-3 pb-5 align-centre">}}
 
-### Key Insights
+#### Key Insights
 
 We learnt through talking to users that there were some consistent themes and issues. After discussing the findings together as a group, we generated the following insights.
 
@@ -114,7 +113,7 @@ We learnt through talking to users that there were some consistent themes and is
 
 ***
 
-### User Personas
+#### User Personas
 
 Based on our interview we created user personas for the two main visitors to MyCareSpace – carers and clients. This would help us design with the end-users in mind.
 
@@ -124,7 +123,7 @@ Based on our interview we created user personas for the two main visitors to MyC
 
 ***
 
-### Reframing the Problem
+#### Reframing the Problem
 
 After reviewing our insights, we re-framed the original brief into a problem statement. 
 
@@ -158,7 +157,7 @@ After generating the problem statement, we created several 'How Might We' statem
 
 ## ✏️ Develop
 
-### Ideation
+#### Ideation
 
 For the ideation phase, __we focused on the key problems and pain points felt by our users__ — that they did not understand what services MyCareSpace offered, that it was difficult to contact them quickly.
 
@@ -178,7 +177,7 @@ When brainstorming ideas we came up with the following features and requirements
 
  {{< figure src="/work/case-studies/images/mcs/mcs-ideation.jpg" alt="Ideation" class="pt-3 pb-5 align-centre" title="Our team brainstormed ideas and shared using the Crazy 8's technique">}}
 
-### User Journey
+#### User Journey
 
 For the user journey, we started with a basic user flow that would highlight the validations needed at different points of the journey. 
 
@@ -191,7 +190,7 @@ We wanted to give the users the control to go back when needed, and also to revi
 
 
 
- ### The New Homepage
+ #### The New Homepage
 
 * __A Refreshed Look__
 
@@ -219,7 +218,7 @@ We wanted to give the users the control to go back when needed, and also to revi
 {{< figure src="/work/case-studies/images/mcs/mcs-contact-number.jpg" alt="Contact" class="pt-3 pb-5 align-centre">}}
 
 
- ### The New Matching Service
+ #### The New Matching Service
 
 * __Introducing the Service__
 

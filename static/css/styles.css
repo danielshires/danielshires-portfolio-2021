@@ -137,12 +137,6 @@ h1 {
   line-height: 120%;
 }
 
-@media (min-width: 576px) {
-  h1 {
-    font-size: 2.75rem;
-  }
-}
-
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -164,17 +158,23 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 900;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   h2 {
     font-size: 2.25rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media (min-width: 1200px) {
   h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -201,7 +201,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -209,7 +209,7 @@ h4 {
 
 @media (min-width: 768px) {
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -267,13 +267,13 @@ p {
 @media (min-width: 768px) {
   p {
     font-size: 1rem;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1.25rem 0 1.25rem 0;
   }
 }
 
 @media (min-width: 1200px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin: 1.5rem 0 1.5rem 0;
   }
 }
@@ -343,8 +343,19 @@ img {
 }
 
 hr {
-  margin: 4rem 0 4rem 0;
-  color: red;
+  margin: 2.5rem 0 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  hr {
+    margin: 3rem 0 3rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  hr {
+    margin: 4rem 0 4rem 0;
+  }
 }
 
 a {
@@ -998,7 +1009,7 @@ section {
 }
 
 .hero-single {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -1038,7 +1049,7 @@ section {
 
 .down-arrow {
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 50%;
   width: 200px;
   -webkit-transform: translateX(-100px);
@@ -1049,6 +1060,40 @@ section {
 
 .down-arrow img {
   width: 16px;
+  -webkit-animation-name: downIconBounce;
+          animation-name: downIconBounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes downIconBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes downIconBounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
 .down-arrow_text {

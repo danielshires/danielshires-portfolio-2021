@@ -250,10 +250,6 @@ h1 {
     font-size: 2.25rem;
     line-height: 120%;
 
-    @include media-breakpoint-up(sm) {
-        font-size: 2.75rem;
-    }
-
     @include media-breakpoint-up(md) {
         font-size: 4rem;
     }
@@ -271,13 +267,20 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 900;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 
     @include media-breakpoint-up(md) {
         font-size: 2.25rem;
+        margin-top: 1.75rem;
+        margin-bottom: 1.25rem;
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+
     }
 }
 
@@ -300,13 +303,13 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 
     @include media-breakpoint-up(md) {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     @include media-breakpoint-up(xl) {
@@ -357,12 +360,13 @@ p {
 
     @include media-breakpoint-up(md) {
         font-size: 1rem;
-        margin: 1.5rem 0 1.5rem 0;
+        margin: 1.25rem 0 1.25rem 0;
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         margin: 1.5rem 0 1.5rem 0;
+
     }
 }
 
@@ -431,8 +435,15 @@ img {
 // Spacing
 
 hr {
-    margin: 4rem 0 4rem 0;
-    color: red;
+    margin: 2.5rem 0 2.5rem 0;
+
+    @include media-breakpoint-up(md) {
+        margin: 3rem 0 3rem 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin: 4rem 0 4rem 0;
+    }
 }
 
 // Links 
@@ -1092,7 +1103,7 @@ section {
 // Hero Section
 
 .hero-single {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -1140,7 +1151,7 @@ section {
 
 .down-arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 50%;
     width: 200px;
     transform: translateX(-100px);
@@ -1149,7 +1160,20 @@ section {
 
     img {
         width: 16px;
+        animation-name: downIconBounce;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        transform: translateX(0px);
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+
+        @keyframes downIconBounce {
+            0%   {transform: translateY(0px);}
+            100% {transform: translateY(10px);}
+          }
     }
+
+
 }
 
 .down-arrow_text {
