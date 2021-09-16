@@ -13,6 +13,12 @@
 }
 
 @font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
   font-family: "Circular";
   src: url("/fonts/Circular/CircularStd-Book.woff");
   /* IE9 Compat Modes */
@@ -153,23 +159,20 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 900;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   h2 {
     font-size: 2.25rem;
-    margin-top: 1.75rem;
-    margin-bottom: 1.25rem;
+    margin-top: 2.25rem;
   }
 }
 
 @media (min-width: 1200px) {
   h2 {
     font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
   }
 }
 
@@ -178,7 +181,6 @@ h3 {
   color: #0f1317;
   font-weight: 500;
   margin-top: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -198,19 +200,20 @@ h3 {
 h4 {
   font-size: 1.25rem;
   font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
 }
 
 @media (min-width: 768px) {
   h4 {
     font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   h4 {
     font-size: 1.75rem;
+    margin-top: 1.75rem;
   }
 }
 
@@ -250,26 +253,26 @@ h6 {
 @media (min-width: 768px) {
   h6 {
     font-size: 0.9rem;
+    margin-top: 0.9rem;
   }
 }
 
 p {
   font-size: 0.95rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 0 0;
   font-weight: 400;
 }
 
 @media (min-width: 768px) {
   p {
     font-size: 1rem;
-    margin: 1.25rem 0 1.25rem 0;
+    margin: 1.25rem 0 0.5rem 0;
   }
 }
 
 @media (min-width: 1200px) {
   p {
     font-size: 1.25rem;
-    margin: 1.5rem 0 1.5rem 0;
   }
 }
 
@@ -293,7 +296,7 @@ li::marker {
   font-size: 1.25rem;
 }
 
-footer p .footer-text {
+p.footer-text {
   font-size: 16px;
 }
 
@@ -382,6 +385,12 @@ a:hover, a:active, a:focus {
   -webkit-text-fill-color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   text-decoration: none;
   border-bottom: 0px solid transparent;
+}
+
+#work-link {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-bottom: 1px solid #FF00E0;
 }
 
 p a {
@@ -1080,8 +1089,7 @@ section {
   margin: 0;
 }
 
-.down-arrow img {
-  width: 16px;
+.down-arrow .down-arrow_animated {
   -webkit-animation-name: downIconBounce;
           animation-name: downIconBounce;
   -webkit-animation-duration: 1s;
@@ -1116,6 +1124,10 @@ section {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
   }
+}
+
+.down-arrow_hero {
+  bottom: 10%;
 }
 
 .down-arrow_text {
