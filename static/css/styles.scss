@@ -41,7 +41,7 @@
 }
 
 @font-face {
-    font-family: "Circular", Arial, Helvetica, sans-serif;
+    font-family: "Circular";
     src: url('/fonts/Circular/CircularStd-Bold.woff');
     /* IE9 Compat Modes */
     src: url('/fonts/Circular/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
@@ -59,7 +59,7 @@
 }
 
 @font-face {
-    font-family: "Circular", Arial, Helvetica, sans-serif;
+    font-family: "Circular";
     src: url('/fonts/Circular/CircularStd-Medium.woff');
     /* IE9 Compat Modes */
     src: url('/fonts/Circular/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
@@ -214,7 +214,7 @@ html {
 }
 
 body {
-    font-family: "Circular";
+    font-family: "Circular", Arial, Helvetica, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     color: rgba($primary-text-color, 1);
