@@ -5,7 +5,7 @@ title: "Maso Fitness"
 pageTitle: "Maso Fitness"
 description: "Getting people fit in Sydney's Inner West"
 date: 2018-09-16T08:53:47-05:00
-draft: false
+draft: true
 keywords: "Digital Design"
 readingTime: ""
 heroImage: /work/digital-design/images/maso-fitness/Maso-Project-Tiles-1.jpg
