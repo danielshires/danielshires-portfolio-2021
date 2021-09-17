@@ -54,7 +54,7 @@ tagTools: "Illustrator, Figma, Wordpress"
 
 <!-- Mobile Hompepage -->
 
-{{< figure src="/work/digital-design/images/maso-fitness/maso-mobile-page.jpg" alt="Mobile Design" title="" class="py-5 align-centre">}}
+{{< figure src="/work/digital-design/images/maso-fitness/maso-mobile-page.jpg" alt="Mobile Design" title="The mobile design was " class="py-5 align-centre">}}
 
 <!-- RolloutHompepage -->
 
