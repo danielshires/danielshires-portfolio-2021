@@ -244,7 +244,7 @@ p {
 h1 {
     font-weight: 900;
     font-size: 2.25rem;
-    line-height: 120%;
+    line-height: 110%;
 
     @include media-breakpoint-up(md) {
         font-size: 4rem;
