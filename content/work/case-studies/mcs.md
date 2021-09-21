@@ -188,8 +188,6 @@ We wanted to give the users the control to go back when needed, and also to revi
 
  ## 🚀 Deliver
 
-
-
  #### The New Homepage
 
 * __A Refreshed Look__

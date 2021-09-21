@@ -7,10 +7,8 @@
 {{end}}
 
 {{ define "main" }}
-{{ partial "work/workTag" . }}
-<!-- {{ partial "work/hero" . }} -->
-
-<!-- {{ partial "work/hero" . }} -->
+{{ partial "work/page-title" . }}
+{{ partial "work/hero" . }}
 
 <section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
     <div class="container">
@@ -30,3 +28,6 @@
 {{ partial "footer" . }}
 {{end}}
 
+{{ define "scripts" }}
+{{ partial "scripts" . }}
+{{end}}
