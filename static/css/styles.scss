@@ -20,7 +20,7 @@
     font-family: "San Francisco";
     font-weight: 400;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-  }
+}
 
 @font-face {
     font-family: "Circular";
@@ -153,39 +153,19 @@ $testimonial-img-size-lg: 225px;
 $testimonial-img-size-lg: 250px;
 
 
-// Animate
+// Variabls
 
-.delay-1 {
-    animation-delay: .25s;
-}
+:root {
+    --background: #f4acac;
+    --text-color: #000011;
 
-.delay-2 {
-    animation-delay: .5s;
-}
+    --nav-link: rgba(0, 0, 17, 0.6);
+    --nav-link-selected: rgba(0, 0, 17, 1);
+    --nav-underline: rgba(0, 0, 17, 0.1);
+    --nav-underline-hover: rgba(0, 0, 17, 1);
 
-.delay-3 {
-    animation-delay: .75s;
-}
-
-.delay-4 {
-    animation-delay: 1s;
-}
-
-.delay-5 {
-    animation-delay: 1.25s;
-}
-
-// GSAP
-
-.loader {
-    position: fixed;
-    width: 100vw;
-    height: 200vh;
-    pointer-events: none;
-    background-color: $primary-color;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
+    --timing: 0.25s;
+    --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 // Layout
@@ -516,16 +496,16 @@ header {
 
 
 .navbar-brand {
-    color: rgba(255, 255, 255, 1);
+    color: rgba($primary-text-color, 1);
+    background: rgba($primary-text-color, 1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.1rem;
     transform: translateY(0em);
     transition: all 0.3s ease-out;
     font-family: $primary-font-medium;
     font-weight: 900;
-    background: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
     &:hover {
         transition: all 0.5s ease-out;
@@ -541,21 +521,14 @@ header {
 
 }
 
-.navbar-brand-light {
+
+.nav-link {
     color: rgba($primary-text-color, 1);
     background: rgba($primary-text-color, 1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.nav-link {
-    color: rgba(255, 255, 255, 1);
     font-size: 1rem;
-    background: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     margin-left: 0.5rem;
@@ -1297,6 +1270,16 @@ figure figcaption h4 {
 
 // JS
 
+.navBrand_light {
+    background-color: #fff;
+    color: rgba(#fff, 1);
+    transition: all 0.2s ease-out;
+    background: rgba(#fff, 1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .scrolled {
     background-color: #fff;
     color: rgba($primary-text-color, 1);
@@ -1348,4 +1331,32 @@ figure figcaption h4 {
     .swiper-pagination-bullet-active {
         background-color: $primary-pink;
     }
+}
+
+
+// Barba
+
+.fade-leave-active,
+.fade-enter-active {
+    transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier);
+}
+
+.fade-leave {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fade-leave-to {
+    opacity: 0;
+    transform: translate(0, 30px);
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translate(0, 30px);
+}
+
+.fade-enter-to {
+    opacity: 1;
+    transform: translate(0, 0);
 }

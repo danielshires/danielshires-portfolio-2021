@@ -48,40 +48,15 @@
   font-style: normal;
 }
 
-.delay-1 {
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
-}
-
-.delay-2 {
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.delay-3 {
-  -webkit-animation-delay: .75s;
-          animation-delay: .75s;
-}
-
-.delay-4 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.delay-5 {
-  -webkit-animation-delay: 1.25s;
-          animation-delay: 1.25s;
-}
-
-.loader {
-  position: fixed;
-  width: 100vw;
-  height: 200vh;
-  pointer-events: none;
-  background-color: #00254F;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
+:root {
+  --background: #f4acac;
+  --text-color: #000011;
+  --nav-link: rgba(0, 0, 17, 0.6);
+  --nav-link-selected: rgba(0, 0, 17, 1);
+  --nav-underline: rgba(0, 0, 17, 0.1);
+  --nav-underline-hover: rgba(0, 0, 17, 1);
+  --timing: 0.25s;
+  --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .container {
@@ -427,7 +402,11 @@ header {
 }
 
 .navbar-brand {
-  color: white;
+  color: #0f1317;
+  background: #0f1317;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.1rem;
   -webkit-transform: translateY(0em);
           transform: translateY(0em);
@@ -435,10 +414,6 @@ header {
   transition: all 0.3s ease-out;
   font-family: "Circular", Arial, Helvetica, sans-serif;
   font-weight: 900;
-  background: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .navbar-brand:hover {
@@ -457,21 +432,13 @@ header {
   }
 }
 
-.navbar-brand-light {
+.nav-link {
   color: #0f1317;
   background: #0f1317;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.nav-link {
-  color: white;
   font-size: 1rem;
-  background: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-left: 0rem !important;
   padding-right: 0rem !important;
   margin-left: 0.5rem;
@@ -1226,6 +1193,17 @@ figure figcaption h4 {
   text-align: center;
 }
 
+.navBrand_light {
+  background-color: #fff;
+  color: white;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .scrolled {
   background-color: #fff;
   color: #0f1317;
@@ -1282,5 +1260,37 @@ figure figcaption h4 {
 
 .swiper-container .swiper-pagination-bullet-active {
   background-color: #FF00E0;
+}
+
+.fade-leave-active,
+.fade-enter-active {
+  -webkit-transition: opacity var(--timing) var(--bezier), -webkit-transform var(--timing) var(--bezier);
+  transition: opacity var(--timing) var(--bezier), -webkit-transform var(--timing) var(--bezier);
+  transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier);
+  transition: opacity var(--timing) var(--bezier), transform var(--timing) var(--bezier), -webkit-transform var(--timing) var(--bezier);
+}
+
+.fade-leave {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+}
+
+.fade-enter {
+  opacity: 0;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+}
+
+.fade-enter-to {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=styles.css.map */

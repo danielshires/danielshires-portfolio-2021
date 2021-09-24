@@ -3,12 +3,13 @@
 {{end}}
 
 {{ define "header" }}
-{{ partial "header-light" (dict "Kind" .Kind "Template" "List") }}
+{{ partial "header" }}
 {{end}}
 
 
 {{ define "main" }}
 
+<div data-barba="container">
 <section class="hero-single d-flex flex-column justify-content-center align-items-center position-relative mb-1">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -38,7 +39,7 @@
         </div>
     </div>
 </section>
-
+</div>
 {{end}}
 
 

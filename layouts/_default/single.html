@@ -3,27 +3,29 @@
 {{end}}
 
 {{ define "header"}}
-{{ partial "header-light" (dict "Kind" .Kind "Template" "List") }}
+{{ partial "header" }}
 {{end}}
 
+
 {{ define "main" }}
-{{ partial "work/workTag" . }}
+<div data-barba="container">
 
-{{ partial "work/hero" . }}
+    {{ partial "work/workTag" . }}
 
+    {{ partial "work/hero" . }}
 
-
-
-<section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 ">
-                {{ .Content}}
+    <section
+        class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 ">
+                    {{ .Content}}
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+</div>
 {{end}}
 
 {{ define "footer" }}
@@ -33,5 +35,3 @@
 {{ define "scripts" }}
 {{ partial "scripts" . }}
 {{end}}
-
-
