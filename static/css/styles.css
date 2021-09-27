@@ -663,8 +663,8 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -712,8 +712,8 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img::before {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -742,8 +742,8 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img::after {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -762,8 +762,8 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img-jack {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -811,8 +811,8 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img-jack::before {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
@@ -841,29 +841,26 @@ a.card-link:hover, a.card-link:focus, a.card-link:active {
 
 @media (min-width: 992px) {
   .testimonial-img-jack::after {
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
   }
 }
 
 section {
   position: relative;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   min-height: 25vh;
+  margin: 2rem 0;
 }
 
 @media (min-width: 768px) {
   section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    margin: 6rem 0;
   }
 }
 
 @media (min-width: 992px) {
   section {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    margin: 8rem 0;
   }
 }
 
@@ -886,11 +883,13 @@ section {
   background-size: cover;
   height: auto;
   position: relative;
+  min-height: 35vh;
 }
 
 .hero-single {
   height: 90vh;
   width: 100%;
+  margin-top: 0;
 }
 
 .hero {
@@ -901,7 +900,7 @@ section {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #fff;
   background: -webkit-linear-gradient(#fff, #FFf);
   background-clip: text;

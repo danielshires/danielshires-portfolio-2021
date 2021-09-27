@@ -149,8 +149,7 @@ $primar-red: #FF0029;
 
 $testimonial-img-size-mobile: 150px;
 $testimonial-img-size-md: 200px;
-$testimonial-img-size-lg: 225px;
-$testimonial-img-size-lg: 250px;
+$testimonial-img-size-lg: 240px;
 
 
 // Variabls
@@ -941,18 +940,15 @@ a.card-link {
 
 section {
     position: relative;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     min-height: 25vh;
+    margin: 2rem 0;
 
     @include media-breakpoint-up(md) {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        margin: 6rem 0;
     }
 
     @include media-breakpoint-up(lg) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        margin: 8rem 0;
     }
 
 
@@ -977,6 +973,7 @@ section {
     background-size: cover;
     height: auto;
     position: relative;
+    min-height: 35vh;
 }
 
 // Hero Section
@@ -984,6 +981,7 @@ section {
 .hero-single {
     height: 90vh;
     width: 100%;
+    margin-top:0;
 }
 
 .hero {
@@ -993,7 +991,7 @@ section {
     z-index: 0;
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.75rem;
         color: #fff;
         background: -webkit-linear-gradient(#fff, #FFf);
         background-clip: text;
