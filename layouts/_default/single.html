@@ -1,37 +1,30 @@
-{{ define "head"}}
+{{ define "head" }}
 {{ partial "head" . }}
 {{end}}
 
-{{ define "header"}}
+{{ define "header" }}
 {{ partial "header" }}
 {{end}}
 
-
 {{ define "main" }}
-<div data-barba="container">
-
+<main data-barba="container">
+<div>
     {{ partial "work/workTag" . }}
-
     {{ partial "work/hero" . }}
-
     <section
         class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 ">
+                <div class="col-12 col-md-10 col-lg-9 ">
                     {{ .Content}}
                 </div>
             </div>
         </div>
     </section>
-
 </div>
+</main>
 {{end}}
 
 {{ define "footer" }}
 {{ partial "footer" . }}
-{{end}}
-
-{{ define "scripts" }}
-{{ partial "scripts" . }}
 {{end}}

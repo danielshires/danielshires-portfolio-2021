@@ -187,9 +187,25 @@ $testimonial-img-size-lg: 250px;
 html {
     scroll-behavior: smooth;
     height: -webkit-fill-available;
-    font-size: 18px;
+    font-size: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 110%;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 120%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 130%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 150%;
+    }
 
 }
 
@@ -209,101 +225,40 @@ body {
     white-space: pre;
 }
 
-h2,
-h3,
-h4 {
-    line-height: 140%;
-}
-
-h5,
-h6,
-p {
-    line-height: 150%;
-}
 
 h1 {
+    font-size: 2.5rem;
     font-weight: 900;
-    font-size: 2.25rem;
     line-height: 110%;
-
-    @include media-breakpoint-up(md) {
-        font-size: 4rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-        font-size: 4.25rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 4.5rem;
-    }
-
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 900;
     margin-top: 2rem;
-
-    @include media-breakpoint-up(md) {
-        font-size: 2.25rem;
-        margin-top: 2.25rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 2.5rem;
-        margin-top: 2.5rem;
-    }
+    line-height: 110%;
 }
 
 h3 {
     font-size: 1.5rem;
-    color: rgba($primary-text-color, 1);
     font-weight: 500;
     margin-top: 1.5rem;
-
-    @include media-breakpoint-up(md) {
-        font-size: 1.75rem;
-        margin-top: 1.75rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
+    line-height: 130%;
 }
 
 h4 {
     font-size: 1.25rem;
     font-weight: 500;
     margin-top: 1.25rem;
-
-    @include media-breakpoint-up(md) {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 1.75rem;
-        margin-top: 1.75rem;
-    }
+    line-height: 130%;
 }
 
 h5 {
     font-family: 'Circular', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 500;
-
-
-    @include media-breakpoint-up(md) {
-        font-size: 1.25rem;
-    }
-
-    @include media-breakpoint-up(lg) {
-        font-size: 1.5rem;
-    }
-
+    margin-top: 1rem;
+    line-height: 140%;
 }
 
 h6 {
@@ -318,29 +273,14 @@ h6 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-
-    @include media-breakpoint-up(md) {
-        font-size: 0.9rem;
-        margin-top: 0.9rem;
-
-    }
-
+    line-height: 140%;
 }
 
 p {
-    font-size: 0.95rem;
-    margin: 1rem 0 0 0;
+    font-size: 1rem;
+    margin-top: 1rem;
     font-weight: 400;
-
-    @include media-breakpoint-up(md) {
-        font-size: 1rem;
-        margin: 1.25rem 0 0.5rem 0;
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 1.25rem;
-    }
+    line-height: 150%;
 }
 
 b,
@@ -428,21 +368,17 @@ hr {
 // Links 
 
 a {
+    font-size: 1rem;
     text-decoration: none;
     color: $primary-pink;
     background-color: transparent;
-    transition: all 0.4s ease-in-out;
     background: $primary-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: $primary-gradient;
     border-bottom: 0px solid transparent;
 
-
-    &:hover,
-    &:active,
-    &:focus {
-        transition: all 0.2s ease-out;
+    &:hover {
         color: $primary-pink;
         background: $primary-gradient;
         background-clip: text;
@@ -450,12 +386,8 @@ a {
         -webkit-text-fill-color: $primary-gradient;
         text-decoration: none;
         border-bottom: 0px solid transparent;
+        transition: color 5s ease-in-out;
     }
-}
-
-#work-link {
-    transition: all 0.2s ease-out;
-    border-bottom: 1px solid $primary-pink
 }
 
 p a {
@@ -496,61 +428,37 @@ header {
 
 
 .navbar-brand {
+    font-size: 1rem;
     color: rgba($primary-text-color, 1);
     background: rgba($primary-text-color, 1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.1rem;
     transform: translateY(0em);
-    transition: all 0.3s ease-out;
     font-family: $primary-font-medium;
     font-weight: 900;
 
     &:hover {
-        transition: all 0.5s ease-out;
         background: $primary-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-
-    @include media-breakpoint-up(md) {
-        font-size: 1.4rem;
     }
 
 }
 
 
 .nav-link {
+    font-size: 0.8rem;
     color: rgba($primary-text-color, 1);
     background: rgba($primary-text-color, 1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1rem;
     padding-left: 0rem !important;
     padding-right: 0rem !important;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
-    &:hover,
-    &:active,
-    &:focus {
-        transition: all 0.5s ease-out;
-        background: $primary-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-.nav-link-light {
-    color: rgba($primary-text-color, 1);
-    background: rgba($primary-text-color, 1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 992px) {
@@ -656,13 +564,11 @@ header {
 
 .badge-pill {
     background-color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
-    margin-top: 0.5rem;
-    padding: 1rem;
+    padding: 0.8rem 0.6rem;
     color: white;
     line-height: 0;
     font-weight: 400;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
 
 // Buttons
@@ -675,6 +581,10 @@ button {
 }
 
 .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    min-width: 7rem;
+
     @include media-breakpoint-down(sm) {
         width: 100%;
     }
@@ -682,10 +592,9 @@ button {
 
 .btn-primary {
     background: $primary-gradient;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border: 1px solid transparent;
     transition: 500ms;
-    font-size: 1rem;
 
     &:hover,
     &:focus,
@@ -702,7 +611,6 @@ button {
 
 .btn-secondary {
     color: #fff;
-    padding: 0.5rem 1rem;
     border: solid 1px #fff;
     background-color: transparent;
     transition: 500ms;
@@ -722,7 +630,6 @@ button {
 
 .btn-tertiary {
     color: $primary-text-color;
-    padding: 0.5rem 1rem;
     border: solid 1px #fff;
     background-color: transparent;
     border: 1px solid $primary-text-color;
@@ -804,13 +711,9 @@ a.card-link {
 
     transform: translateY(0%);
     z-index: 0;
-
-
 }
 
-.card-text {
-    margin: 0 0 0.25rem 0;
-}
+
 
 // Portfolio Card
 
@@ -1096,38 +999,27 @@ section {
     z-index: 0;
 
     h1 {
+        font-size: 3rem;
+        color: #fff;
         background: -webkit-linear-gradient(#fff, #FFf);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
 
         span {
+            color: $primary-pink;
             background: $primary-gradient;
             background-clip: text;
             -webkit-background-clip: text;
-            text-fill-color: transparent;
             -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
         }
     }
 
 
 }
 
-.hero-links {
-    a {
-        color: white;
-        font-size: 1rem;
-
-        @include media-breakpoint-up(xxs) {
-            font-size: 1.125rem;
-        }
-
-        @include media-breakpoint-up(md) {
-            font-size: 1.25rem;
-        }
-
-    }
-}
 
 
 // Icons
@@ -1137,9 +1029,9 @@ section {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    width: 200px;
-    transform: translateX(-100px);
-    font-size: 14px;
+    width: 240px;
+    transform: translateX(-120px);
+    font-size: 0.6rem;
     margin: 0;
 
     .down-arrow_animated {
@@ -1202,7 +1094,6 @@ h4.job-title {
 
 blockquote {
     position: relative;
-    // border-left: 0.4rem solid $primary-color;
     background-color: transparent;
     padding: 1.2rem 1.3rem 1.2rem 1.5rem;
     margin: 2rem 0 3rem 0;
@@ -1216,7 +1107,7 @@ blockquote {
             font-family: 'PX-Grotesk', Arial, Helvetica, sans-serif;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 400;
             margin-top: 0.75rem;
             margin-bottom: 0.25rem;
@@ -1224,10 +1115,6 @@ blockquote {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
-            @include media-breakpoint-up(md) {
-                font-size: 1rem;
-            }
         }
     }
 
@@ -1260,9 +1147,9 @@ blockquote {
 
 figure figcaption,
 figure figcaption h4 {
-    font-weight: 400;
-    font-size: 0.9rem;
     color: rgba($primary-text-color, 0.5);
+    font-weight: 400;
+    font-size: 0.8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -1273,7 +1160,6 @@ figure figcaption h4 {
 .navBrand_light {
     background-color: #fff;
     color: rgba(#fff, 1);
-    transition: all 0.2s ease-out;
     background: rgba(#fff, 1);
     background-clip: text;
     -webkit-background-clip: text;
@@ -1291,7 +1177,6 @@ figure figcaption h4 {
 .scrolledColor {
     background-color: #fff;
     color: rgba($primary-text-color, 1);
-    transition: all 0.2s ease-out;
     background: rgba($primary-text-color, 1);
     background-clip: text;
     -webkit-background-clip: text;

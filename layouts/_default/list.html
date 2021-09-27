@@ -6,10 +6,9 @@
 {{ partial "header" }}
 {{end}}
 
-
 {{ define "main" }}
-
-<div data-barba="container">
+<main data-barba="container">
+<div>
 <section class="hero-single d-flex flex-column justify-content-center align-items-center position-relative mb-1">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -27,7 +26,6 @@
         </div>
 </section>
 
-
 <section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -40,15 +38,9 @@
     </div>
 </section>
 </div>
+</main>
 {{end}}
-
 
 {{ define "footer" }}
 {{ partial "footer" . }}
 {{end}}
-
-{{ define "scripts" }}
-{{ partial "scripts" . }}
-{{end}}
-
-

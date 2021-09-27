@@ -12,7 +12,7 @@ heroImage: /work/digital-design/images/scenic/scenic-banner-2.jpg
 heroAlt: "Scenic"
 tagRole: "Digital Design"
 tagDuration: "2019-2020"
-tagTools: "Illustrator, Figma, Wordpress"
+tagTools: "Adobe CS, Figma"
 
 ---
 

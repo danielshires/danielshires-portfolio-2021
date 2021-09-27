@@ -11,8 +11,8 @@ readingTime: ""
 heroImage: /work/digital-design/images/made/Made-Project-Tiles-.jpg
 heroAlt: "Made"
 tagRole: "Digital Design"
-tagDuration: "2019-2020"
-tagTools: "Illustrator, Figma, Wordpress"
+tagDuration: "2017-2018"
+tagTools: "InDesign, Photoshop"
 
 ---
 

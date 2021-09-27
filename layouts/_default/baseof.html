@@ -3,24 +3,20 @@
 {{ block "head" . }}
 {{end }}
 
-<body>
+<body id="my-scrollbar" data-scrollbar>
 
+{{ block "header" . }}
+{{end }}
 
-     {{ block "header" . }}
-     {{end }}
+<div data-barba="wrapper" data-scroll-container>
 
-     <main data-barba="wrapper">
-               {{ block "main" . }}
-               {{end }}
-     </main>
-     {{ block "contact" . }}
-     {{end }}
+{{ block "main" . }}
+{{end }}
 
-     {{ block "footer" . }}
-     {{end }}
+</div>
 
-     {{ block "scripts" . }}
-     {{end}}
+{{ block "footer" . }}
+{{end }}
 
 </body>
 

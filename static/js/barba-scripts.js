@@ -16,8 +16,6 @@ barba.init({
                     top: 0,
                     behavior: "smooth",
                 })
-
-
             }
         }
 
@@ -26,6 +24,7 @@ barba.init({
     views: [{
         namespace: 'index',
         beforeEnter() {
+            
             navBrand.classList.add("navBrand_light")
             navBrandLink.forEach(i => {
                 i.classList.add("navBrand_light")
@@ -41,6 +40,8 @@ barba.init({
             });
             navButton.classList.remove("btn-secondary")
             navButton.classList.add("btn-tertiary")
+            
+    
         }
     }]
 

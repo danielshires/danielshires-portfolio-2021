@@ -3,23 +3,16 @@
 {{end}}
 
 {{ define "header" }}
-{{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+{{ partial "header" }}
 {{end}}
 
 
 {{ define "main" }}
+<main data-barba="container" data-barba-namespace="index">
 {{ partial "homepage" . }}
-{{end}}
-
-{{ define "contact" }}
-{{ partial "contact" . }}
+</main>
 {{end}}
 
 {{ define "footer" }}
 {{ partial "footer" . }}
-{{end}}
-
-
-{{ define "scripts" }}
-{{ partial "scripts" . }}
 {{end}}

@@ -11,7 +11,7 @@ readingTime: ""
 heroImage: /work/digital-design/images/maso-fitness/Maso-Project-Tiles-1.jpg
 heroAlt: "Maso Fitness"
 tagRole: "Digital Design"
-tagDuration: "4 Weeks (Dec 20')"
+tagDuration: "6 Weeks (Dec 20')"
 tagTools: "Illustrator, Figma, Wordpress"
 ---
 

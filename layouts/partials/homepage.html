@@ -1,41 +1,40 @@
-<div data-barba="container" data-barba-namespace="index">
-
+<div>
   <!-- Hero Section -->
   <section id="home" header-light="yes"
-    class="container-fluid d-flex flex-column justify-content-center align-items-center hero position-relative background-image">
-
-    <div data-parallax="-0.2" class="row d-flex justify-content-center hero-text mt-md-0 hero-animation">
+    class="container-fluid d-flex flex-column justify-content-center align-items-center hero position-relative">
+    <div class="background-image"></div>
+    <div class="row d-flex justify-content-center hero-text mt-md-0 hero-animation">
 
       <!-- Hero Text -->
 
       <div
-        class="col-12 col-md-10 text-center mx-auto hero-text-heading mb-2 w-100 d-flex flex-column justify-content-center align-items-center">
-        <h1 class="title mt-5 mt-md-0" style="cursor: default;">
+        class="col-12 col-md-10 text-center mx-auto hero-text-heading mb-2 w-100 d-flex flex-column justify-content-center align-items-center" data-scroll data-scroll-sticky>
+        <h1 class="title mt-0 py-1" style="cursor: default;">
           <span>Daniel Shires</span><br>
           UX/UI and Digital Designer</span>
         </h1>
       </div>
       <div
         class="col-12 col-md-8 col-lg-6 col-xl-4 text-center mx-auto mb-2 w-100 d-flex flex-column justify-content-center align-items-center">
-        <p>I'm a curious and collaborative designer who uses the principles of human centred design to create simple,
+        <p class="mt-1">I'm a curious and collaborative designer who uses the principles of human centred design to create simple,
           impactful experiences.
         </p>
       </div>
     </div>
 
-    <div data-parallax="-0.2" class="row d-flex justify-content-center hero-text mt-4 mb-5 w-100 hero-animation">
+    <div class="row d-flex justify-content-center hero-text mt-4 mb-5 w-100 hero-animation">
       <!-- Buttons -->
       <div class="col-12 hero-links">
-        <a href="/work" class="btn btn-primary mx-md-4">
+        <a href="/work" class="btn btn-primary mx-md-3">
           View Work
         </a>
-        <a href="#contact" class="btn btn-secondary mt-4 mt-md-0 mx-md-4">Get in touch</a>
+        <a href="#contact" class="btn btn-secondary mt-4 mt-md-0 mx-md-3">Get in touch</a>
       </div>
       </dvi>
 
     </div>
 
-    <div data-parallax="-0.2" class="row down-arrow down-arrow_hero">
+    <div class="row down-arrow down-arrow_hero">
       <!-- {{ partial "animations/down-arrow" . }} -->
     </div>
 
@@ -58,192 +57,191 @@
       {{ partial "work/card-column-2021.html" . }}
 
     </div>
-</section>
+  </section>
 
-<!-- Testimonial Gemma -->
-<section id="testimonial-gemma"
-  class="section d-flex justify-content-center align-items-center background-image-testimonial bg-light">
+  <!-- Testimonial Gemma -->
+  <section id="testimonial-gemma"
+    class="section d-flex justify-content-center align-items-center background-image-testimonial bg-light">
 
-  <!-- Section Heading -->
-  <div class="container py-5 py-md-0">
-    <div class="row d-flex align-items-center px-3 px-md-0">
-      <!-- Section Heading -->
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="testimonial-container fade-up-tesimonial">
-          <div class="testimonial-img"></div>
+    <!-- Section Heading -->
+    <div class="container py-5 py-md-0">
+      <div class="row d-flex align-items-center px-3 px-md-0">
+        <!-- Section Heading -->
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="testimonial-container fade-up-tesimonial">
+            <div class="testimonial-img"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-tesimonial">
+          <h4 class="mt-5 mt-md-0 text-white">“Daniel is a creative and talented graphic designer and a true
+            collaborative team member… I
+            strongly recommend Dan as an experienced designer.”</h4>
+          <h6 class="">Gemma Thomas, Marketing Manager at Scenic</h6>
         </div>
       </div>
-      <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-tesimonial">
-        <h4 class="mt-5 mt-md-0 text-white">“Daniel is a creative and talented graphic designer and a true
-          collaborative team member… I
-          strongly recommend Dan as an experienced designer.”</h4>
-        <h6 class="">Gemma Thomas, Marketing Manager at Scenic</h6>
-      </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
-<!-- Skillset Section -->
+  <!-- My Process -->
+  <section id="skillset" class="section d-flex justify-content-center align-items-center mb-0 pb-0 bg-light">
 
-<!-- My Process -->
-<section id="skillset" class="section d-flex justify-content-center align-items-center mb-0 pb-0 bg-light">
-
-  <!-- Section Heading -->
-  <div class="container fade-up-cards">
-    <div class="row d-flex justify-content-center pb-5">
-      <!-- Section Heading -->
-      <div class="col-12 col-md-10 col-lg-8 col-xxl-10 ">
-        <h2 class="">My Process</h2>
-        <p class="op-5">I utilise HCD prinicples to explore the problem, creative thinking to design the solution,
-          and use my technical know-how to deliver the final product.</p>
+    <!-- Section Heading -->
+    <div class="container fade-up-cards">
+      <div class="row d-flex justify-content-center pb-5">
+        <!-- Section Heading -->
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-10 ">
+          <h2 class="">My Process</h2>
+          <p class="op-5">I utilise HCD prinicples to explore the problem, creative thinking to design the solution,
+            and use my technical know-how to deliver the final product.</p>
+        </div>
+        <!-- Cards -->
       </div>
       <!-- Cards -->
-    </div>
-    <!-- Cards -->
-    <div class="row cards">
-      <div class="col-12 col-md-4 col-lg-4 mb-4">
-        <div class="process-card card text-left text-dark pt-3 rounded">
-          <div class="card-image p-2">
-            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-              style="cursor: pointer;" src="/images/homepage/PNG/Process_Concepts@4x.png" alt="Card image cap">
+      <div class="row cards">
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="process-card card text-left text-dark pt-3 rounded">
+            <div class="card-image p-2">
+              <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
+                style="cursor: pointer;" src="/images/homepage/PNG/Process_Concepts@4x.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title m-0">Explore</h5>
+              <p class="card-text">I use UX and HCD pricinples to explore the problem space in order to brainstorm,
+                generate ideas and develop concepts.</p>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Explore</h5>
-            <p class="card-text">I use UX and HCD pricinples to explore the problem space in order to brainstorm,
-              generate ideas and develop concepts.</p>
+        </div>
+
+        <!-- Design -->
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="card process-card text-left text-dark pt-3 rounded">
+            <div class="card-image p-2">
+              <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
+                style="cursor: pointer;" src="/images/homepage/PNG/Process_Design-Mac@4x.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title m-0">Design</h5>
+              <p class="card-text">I sketch, prototype, visualise and communicate my designs before using Figma and
+                code to make into reality.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Deliver -->
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="card process-card text-left text-dark pt-3 rounded">
+            <div class="card-image p-2">
+              <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
+                style="cursor: pointer;" src="/images/homepage/PNG/Process_Delivery@4x.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title m-0">Launch</h5>
+              <p class="card-text">I deliver projects from conception through to the final
+                product – producing pixel perfect designs, everytime.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Design -->
-      <div class="col-12 col-md-4 col-lg-4 mb-4">
-        <div class="card process-card text-left text-dark pt-3 rounded">
-          <div class="card-image p-2">
-            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-              style="cursor: pointer;" src="/images/homepage/PNG/Process_Design-Mac@4x.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Design</h5>
-            <p class="card-text">I sketch, prototype, visualise and communicate my designs before using Figma and
-              code to make into reality.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Deliver -->
-      <div class="col-12 col-md-4 col-lg-4 mb-4">
-        <div class="card process-card text-left text-dark pt-3 rounded">
-          <div class="card-image p-2">
-            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-              style="cursor: pointer;" src="/images/homepage/PNG/Process_Delivery@4x.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title ">Launch</h5>
-            <p class="card-text">I deliver projects from conception through to the final
-              product – producing pixel perfect designs, everytime.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-</section>
-
-<!-- Creative Services -->
-<section id="creative-services" class="section d-flex justify-content-center align-items-center bg-light">
-
-  <!-- Section Heading -->
-  <div class="container pb-3 fade-up-services">
-    <div class="row d-flex justify-content-center pb-3">
-      <div class="col-12 col-md-10 col-lg-8 col-xxl-10">
-        <h2 class="">My Skills</h2>
-        <p class="">
-          I have a wide-range of
-          industry
-          experience
-          across all types of design and production and recently introduced UX principles into my toolbox.</p>
-      </div>
-    </div>
-    <!-- Cards -->
-
-    <div class="row row d-flex justify-content-center pb-5 fade-up-cards">
-      <div class="col-12 col-md-4 ">
-        <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
-          <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
-            class="card-img-top card-img-top-center w-25" style="cursor: pointer;"
-            src="/images/homepage/PNG/Services_Digital@4x.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Design</h5>
-            <p class="card-text">User Interface Design</p>
-            <p class="card-text">Visual Branding and Identity</p>
-            <p class="card-text">Micro Animations</p>
-            <p class="card-text">Hi-Fi Protoypes</p>
-            <p class="card-text">Figma / Adobe Suite</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 ">
-        <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
-          <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
-            class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
-            src="/images/homepage/PNG/Services_Print@4x.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">UX</h5>
-            <p class="card-text">Wireframing</p>
-            <p class="card-text">User Interviews </p>
-            <p class="card-text">Persona Creation</p>
-            <p class="card-text">Journey Maps</p>
-            <p class="card-text">Information Architecture</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 ">
-        <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
-          <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
-            class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
-            src="/images/homepage/PNG/Services_Code@4x.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Code</h5>
-            <p class="card-text">HTML / CSS / Vanilla JS</p>
-            <p class="card-text">Multi-page Websites</p>
-            <p class="card-text">Landing Pages</p>
-            <p class="card-text">Responsive Mobile Sites</p>
-            <p class="card-text">Static Page Websites</p>
-          </div>
-        </div>
-      </div>
 
     </div>
 
-</section>
+  </section>
 
+  <!-- Creative Services -->
+  <section id="creative-services" class="section d-flex justify-content-center align-items-center bg-light">
 
-<!-- Testimonial Made -->
-<section id="testimonial-made"
-  class="section d-flex justify-content-center align-items-center background-image-testimonial">
-
-  <!-- Section Heading -->
-  <div class="container py-5 py-md-0">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="testimonial-container fade-up-testimonial-made">
-          <div class="testimonial-img-jack"></div>
+    <!-- Section Heading -->
+    <div class="container pb-3 fade-up-services">
+      <div class="row d-flex justify-content-center pb-3">
+        <div class="col-12 col-md-10 col-lg-8 col-xxl-10">
+          <h2 class="">My Skills</h2>
+          <p class="">
+            I have a wide-range of
+            industry
+            experience
+            across all types of design and production and recently introduced UX principles into my toolbox.</p>
         </div>
       </div>
-      <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-testimonial-made">
-        <h4 class="mt-5 text-white ">“Daniel has an excellent range of design skills as well
-          as a
-          passion for typography in all forms. He’s a fantastic team player and was brilliant at nurturing
-          more
-          junior members of the team.”</h4>
-        <h6 class="">Jack Newman, Design Manager at Made</h6>
+      <!-- Cards -->
+
+      <div class="row row d-flex justify-content-center pb-5 fade-up-cards">
+        <div class="col-12 col-md-4 ">
+          <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
+            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
+              class="card-img-top card-img-top-center w-25" style="cursor: pointer;"
+              src="/images/homepage/PNG/Services_Digital@4x.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Design</h5>
+              <p class="card-text">User Interface Design</p>
+              <p class="card-text">Visual Branding and Identity</p>
+              <p class="card-text">Micro Animations</p>
+              <p class="card-text">Hi-Fi Protoypes</p>
+              <p class="card-text">Figma / Adobe Suite</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 ">
+          <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
+            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
+              class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
+              src="/images/homepage/PNG/Services_Print@4x.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">UX</h5>
+              <p class="card-text">Wireframing</p>
+              <p class="card-text">User Interviews </p>
+              <p class="card-text">Persona Creation</p>
+              <p class="card-text">Journey Maps</p>
+              <p class="card-text">Information Architecture</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 ">
+          <div class="card text-center text-dark pt-4 border d-block align-items-center border-0 bg-light">
+            <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
+              class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
+              src="/images/homepage/PNG/Services_Code@4x.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Code</h5>
+              <p class="card-text">HTML / CSS / Vanilla JS</p>
+              <p class="card-text">Multi-page Websites</p>
+              <p class="card-text">Landing Pages</p>
+              <p class="card-text">Responsive Mobile Sites</p>
+              <p class="card-text">Static Page Websites</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+
+  <!-- Testimonial Made -->
+  <section id="testimonial-made"
+    class="section d-flex justify-content-center align-items-center background-image-testimonial">
+
+    <!-- Section Heading -->
+    <div class="container py-5 py-md-0">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="testimonial-container fade-up-testimonial-made">
+            <div class="testimonial-img-jack"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-testimonial-made">
+          <h4 class="mt-5 text-white ">“Daniel has an excellent range of design skills as well
+            as a
+            passion for typography in all forms. He’s a fantastic team player and was brilliant at nurturing
+            more
+            junior members of the team.”</h4>
+          <h6 class="">Jack Newman, Design Manager at Made</h6>
+        </div>
       </div>
     </div>
-  </div>
 
-</section>
+  </section>
+
 </div>

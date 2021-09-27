@@ -6,12 +6,12 @@
 {{ partial "header-light" (dict "Kind" .Kind "Template" "List") }}
 {{end}}
 
-{{ define "main" }}
-<div data-barba="container">
-{{ partial "work/page-title" . }}
-{{ partial "work/hero" . }}
 
-<section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5">
+{{ define "main" }}
+<main data-barba="container">
+{{ partial "work/workTag" . }}
+{{ partial "work/hero" . }}
+<section class="section d-flex text-left justify-content-center align-items-center position-relative pt-1 pt-lg-5 mt-5" data-scroll-section>
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-12">
@@ -20,9 +20,9 @@
         </div>
     </div>
 </section>
-</div>
 
 {{end}}
+
 
 {{ define "footer" }}
 {{ partial "contact" . }}
