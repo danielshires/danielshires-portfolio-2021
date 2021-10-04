@@ -1,3 +1,5 @@
+@import url('https://css.gg/chevron-right.css');
+
 @font-face {
     font-family: 'PX-Grotesk';
     src: url("/fonts/Px-Grotesk-Regular.woff2") format("woff2"),
@@ -120,7 +122,7 @@ $container-max-widths: (sm: 540px,
 // Colors
 
 $primary-color: #00254F;
-$primary-text-color: #0F1317;
+$primary-text-color: #0b1c2e;
 $primary-text-color-light: #567492;
 $primary-gradient: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
 $primary-pink: #FF00E0;
@@ -155,16 +157,10 @@ $testimonial-img-size-lg: 240px;
 // Variabls
 
 :root {
-    --background: #f4acac;
-    --text-color: #000011;
+    --accent-color: rgba(250, 15, 117);
 
-    --nav-link: rgba(0, 0, 17, 0.6);
-    --nav-link-selected: rgba(0, 0, 17, 1);
-    --nav-underline: rgba(0, 0, 17, 0.1);
-    --nav-underline-hover: rgba(0, 0, 17, 1);
-
-    --timing: 0.25s;
-    --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --timing: 150ms;
+    --bezier: cubic-bezier(0.12, 0, 0.39, 0)
 }
 
 // Layout
@@ -186,7 +182,7 @@ $testimonial-img-size-lg: 240px;
 html {
     scroll-behavior: smooth;
     height: -webkit-fill-available;
-    font-size: 1rem;
+    font-size: 16px;
     overflow-y: scroll;
     overflow-x: hidden;
 
@@ -203,8 +199,9 @@ html {
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 150%;
+        font-size: 140%;
     }
+
 
 }
 
@@ -217,38 +214,41 @@ body {
     width: 100%;
     word-wrap: break-word;
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 900;
     line-height: 110%;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     font-weight: 900;
     margin-top: 2rem;
     line-height: 110%;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 500;
     margin-top: 1.5rem;
     line-height: 130%;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     font-weight: 500;
     margin-top: 1.25rem;
     line-height: 130%;
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 500;
     margin-top: 1rem;
     line-height: 140%;
@@ -258,7 +258,7 @@ h6 {
     font-family: 'PX-Grotesk', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.75rem;
+    font-size: 0.75em;
     font-weight: 600;
     margin-top: 0.75rem;
     margin-bottom: 0.25rem;
@@ -270,7 +270,7 @@ h6 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 1rem;
     font-weight: 400;
     line-height: 150%;
@@ -295,7 +295,7 @@ li {
 
     &::marker {
         color: $primary-pink;
-        font-size: 1.25rem;
+        font-size: 1.25em;
     }
 }
 
@@ -311,7 +311,7 @@ p.footer-text {
 label {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 0.6em;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
@@ -361,7 +361,7 @@ hr {
 // Links 
 
 a {
-    font-size: 1rem;
+    font-size: 1em;
     text-decoration: none;
     color: $primary-pink;
     background-color: transparent;
@@ -417,11 +417,18 @@ header {
     width: 100%;
     z-index: 100;
     transition: all 0.3s ease-out;
+    font-size: 0.875rem;
+}
+
+nav .btn {
+    font-size: 0.75em;
+    padding: 0.5rem 0.75rem;
+    min-width: 2rem;
 }
 
 
 .navbar-brand {
-    font-size: 1rem;
+    font-size: 1em;
     color: rgba($primary-text-color, 1);
     background: rgba($primary-text-color, 1);
     background-clip: text;
@@ -442,16 +449,12 @@ header {
 
 
 .nav-link {
-    font-size: 0.8rem;
+    font-size: 1em;
     color: rgba($primary-text-color, 1);
     background: rgba($primary-text-color, 1);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -561,33 +564,61 @@ header {
     color: white;
     line-height: 0;
     font-weight: 400;
-    font-size: 0.5rem;
+    font-size: 0.5em;
 }
 
 // Buttons
 
-button {
-    color: white;
-    box-shadow: none;
-    font-size: 0.8rem;
-    padding: 0.75rem 1rem;
-    transition: 500ms;
-}
+
 
 .btn {
-    font-size: 0.85rem;
-    padding: 0.6rem 1rem;
+    font-size: 0.8em;
+    padding: 0.5rem 1rem;
     min-width: 7rem;
+    transform: translateY(0em);
+    transition: 500ms;
+    // display: inline-flex;
+
+    // .chevron {
+    //     animation-play-state: paused;
+    //     animation-name: chevronX;
+    //     animation-duration: 250ms;
+    //     animation-iteration-count: 1;
+    //     animation-direction: normal;
+    //     animation-timing-function: ease-in-out;
+    // }
+
+    &:hover {
+        transform: translateY(-0.25em);
+        transition: all 200ms;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+
+        //     .chevron {
+        //         animation-play-state: running;
+        //     }
+
+        //     @keyframes chevronX {
+
+        //         0% {
+        //             transform: translateX(0);
+        //         }
+
+        //         100% {
+        //             transform: translateX(4px);
+        //         }
+        //     }
+    }
 
     @include media-breakpoint-down(sm) {
         width: 100%;
     }
 }
 
+
+
 .btn-primary {
     background: $primary-gradient;
     border: 1px solid transparent;
-    transition: 500ms;
 
     &:hover,
     &:focus,
@@ -595,19 +626,16 @@ button {
         background: $primary-gradient;
         -webkit-text-fill-color: $primary-gradient;
         border: 1px solid transparent;
-        transition: 300ms;
-        transform: translateY(-0.25rem);
-        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
     }
-
 }
+
 
 .btn-secondary {
     color: #fff;
     border: solid 1px #fff;
+    background: transparent;
+    -webkit-text-fill-color: #fff;
     background-color: transparent;
-    transition: 500ms;
-
 
     &:hover,
     &:focus,
@@ -615,10 +643,9 @@ button {
         background: $primary-gradient;
         -webkit-text-fill-color: $primary-gradient;
         border: 1px solid transparent;
-        transition: 300ms;
-        transform: translateY(-0.25rem);
-        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
     }
+
+
 }
 
 .btn-tertiary {
@@ -626,15 +653,11 @@ button {
     border: solid 1px #fff;
     background-color: transparent;
     border: 1px solid $primary-text-color;
-    transition: 500ms;
 
     &:hover {
         background: $primary-gradient;
         border: 1px solid $primary-pink;
         -webkit-text-fill-color: #fff;
-        transition: 300ms;
-        transform: translateY(-0.25rem);
-        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -973,7 +996,7 @@ section {
     background-size: cover;
     height: auto;
     position: relative;
-    min-height: 35vh;
+    min-height: 40vh;
 }
 
 // Hero Section
@@ -981,7 +1004,7 @@ section {
 .hero-single {
     height: 90vh;
     width: 100%;
-    margin-top:0;
+    margin-top: 0;
 }
 
 .hero {
@@ -991,7 +1014,7 @@ section {
     z-index: 0;
 
     h1 {
-        font-size: 2.75rem;
+        font-size: 2.75em;
         color: #fff;
         background: -webkit-linear-gradient(#fff, #FFf);
         background-clip: text;
@@ -1019,11 +1042,11 @@ section {
 
 .down-arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
     left: 50%;
     width: 240px;
     transform: translateX(-120px);
-    font-size: 0.6rem;
+    font-size: 0.6em;
     margin: 0;
 
     .down-arrow_animated {
@@ -1044,14 +1067,19 @@ section {
             }
         }
     }
+
+    .gg-chevron-down {
+        color: $primary-pink;
+    }
 }
 
 .down-arrow_hero {
-    bottom: 10%;
+    bottom: 5%;
 }
 
 .down-arrow_text {
     text-align: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -1099,7 +1127,7 @@ blockquote {
             font-family: 'PX-Grotesk', Arial, Helvetica, sans-serif;
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-size: 0.75rem;
+            font-size: 0.75em;
             font-weight: 400;
             margin-top: 0.75rem;
             margin-bottom: 0.25rem;
@@ -1141,7 +1169,7 @@ figure figcaption,
 figure figcaption h4 {
     color: rgba($primary-text-color, 0.5);
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.8em;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -1178,7 +1206,6 @@ figure figcaption h4 {
 .scrolledBtnPrimary {
     color: $primary-text-color;
     padding: 0.5rem 1rem;
-    border: solid 1px #fff;
     background-color: transparent;
     border: 1px solid $primary-text-color;
     transition: 500ms;

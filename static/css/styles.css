@@ -1,3 +1,4 @@
+@import url("https://css.gg/chevron-right.css");
 @font-face {
   font-family: 'PX-Grotesk';
   src: url("/fonts/Px-Grotesk-Regular.woff2") format("woff2"), url("../../../Respources/fonts/Px-Grotesk-Regular.woff") format("woff"), url("../../../Resfonts/fonts/Px-Grotesk-Regular.ttf") format("truetype");
@@ -49,14 +50,10 @@
 }
 
 :root {
-  --background: #f4acac;
-  --text-color: #000011;
-  --nav-link: rgba(0, 0, 17, 0.6);
-  --nav-link-selected: rgba(0, 0, 17, 1);
-  --nav-underline: rgba(0, 0, 17, 0.1);
-  --nav-underline-hover: rgba(0, 0, 17, 1);
-  --timing: 0.25s;
-  --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --accent-color: rgba(250, 15, 117);
+  --timing: 150ms;
+  --bezier: cubic-bezier(0.12, 0, 0.39, 0)
+;
 }
 
 .container {
@@ -74,7 +71,7 @@
 html {
   scroll-behavior: smooth;
   height: -webkit-fill-available;
-  font-size: 1rem;
+  font-size: 16px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -99,7 +96,7 @@ html {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 150%;
+    font-size: 140%;
   }
 }
 
@@ -107,42 +104,45 @@ body {
   font-family: "Circular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: #0f1317;
+  color: #0b1c2e;
   text-align: center;
   width: 100%;
   word-wrap: break-word;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: 900;
   line-height: 110%;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 900;
   margin-top: 2rem;
   line-height: 110%;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 500;
   margin-top: 1.5rem;
   line-height: 130%;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 500;
   margin-top: 1.25rem;
   line-height: 130%;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
   margin-top: 1rem;
   line-height: 140%;
@@ -152,7 +152,7 @@ h6 {
   font-family: 'PX-Grotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: 600;
   margin-top: 0.75rem;
   margin-bottom: 0.25rem;
@@ -165,7 +165,7 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1em;
   margin-top: 1rem;
   font-weight: 400;
   line-height: 150%;
@@ -188,7 +188,7 @@ li {
 
 li::marker {
   color: #FF00E0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 p.footer-text {
@@ -198,7 +198,7 @@ p.footer-text {
 label {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -256,7 +256,7 @@ hr {
 }
 
 a {
-  font-size: 1rem;
+  font-size: 1em;
   text-decoration: none;
   color: #FF00E0;
   background-color: transparent;
@@ -312,12 +312,19 @@ header {
   z-index: 100;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  font-size: 0.875rem;
+}
+
+nav .btn {
+  font-size: 0.75em;
+  padding: 0.5rem 0.75rem;
+  min-width: 2rem;
 }
 
 .navbar-brand {
-  font-size: 1rem;
-  color: #0f1317;
-  background: #0f1317;
+  font-size: 1em;
+  color: #0b1c2e;
+  background: #0b1c2e;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -336,16 +343,12 @@ header {
 }
 
 .nav-link {
-  font-size: 0.8rem;
-  color: #0f1317;
-  background: #0f1317;
+  font-size: 1em;
+  color: #0b1c2e;
+  background: #0b1c2e;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-left: 0rem !important;
-  padding-right: 0rem !important;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -429,23 +432,26 @@ header {
   color: white;
   line-height: 0;
   font-weight: 400;
-  font-size: 0.5rem;
+  font-size: 0.5em;
 }
 
-button {
-  color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 0.8rem;
-  padding: 0.75rem 1rem;
+.btn {
+  font-size: 0.8em;
+  padding: 0.5rem 1rem;
+  min-width: 7rem;
+  -webkit-transform: translateY(0em);
+          transform: translateY(0em);
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 
-.btn {
-  font-size: 0.85rem;
-  padding: 0.6rem 1rem;
-  min-width: 7rem;
+.btn:hover {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 767.98px) {
@@ -458,8 +464,6 @@ button {
   background: -webkit-gradient(linear, left top, right top, from(#FF00E0), to(#FF0029));
   background: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   border: 1px solid transparent;
-  -webkit-transition: 500ms;
-  transition: 500ms;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -467,20 +471,14 @@ button {
   background: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   -webkit-text-fill-color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   border: 1px solid transparent;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
   color: #fff;
   border: solid 1px #fff;
+  background: transparent;
+  -webkit-text-fill-color: #fff;
   background-color: transparent;
-  -webkit-transition: 500ms;
-  transition: 500ms;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
@@ -488,21 +486,13 @@ button {
   background: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   -webkit-text-fill-color: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   border: 1px solid transparent;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn-tertiary {
-  color: #0F1317;
+  color: #0b1c2e;
   border: solid 1px #fff;
   background-color: transparent;
-  border: 1px solid #0F1317;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  border: 1px solid #0b1c2e;
 }
 
 .btn-tertiary:hover {
@@ -510,12 +500,6 @@ button {
   background: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
   border: 1px solid #FF00E0;
   -webkit-text-fill-color: #fff;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .rounded {
@@ -883,7 +867,7 @@ section {
   background-size: cover;
   height: auto;
   position: relative;
-  min-height: 35vh;
+  min-height: 40vh;
 }
 
 .hero-single {
@@ -900,7 +884,7 @@ section {
 }
 
 .hero h1 {
-  font-size: 2.75rem;
+  font-size: 2.75em;
   color: #fff;
   background: -webkit-linear-gradient(#fff, #FFf);
   background-clip: text;
@@ -921,12 +905,12 @@ section {
 
 .down-arrow {
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   left: 50%;
   width: 240px;
   -webkit-transform: translateX(-120px);
           transform: translateX(-120px);
-  font-size: 0.6rem;
+  font-size: 0.6em;
   margin: 0;
 }
 
@@ -967,12 +951,17 @@ section {
   }
 }
 
+.down-arrow .gg-chevron-down {
+  color: #FF00E0;
+}
+
 .down-arrow_hero {
-  bottom: 10%;
+  bottom: 5%;
 }
 
 .down-arrow_text {
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -1013,7 +1002,7 @@ blockquote p strong {
   font-family: 'PX-Grotesk', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: 400;
   margin-top: 0.75rem;
   margin-bottom: 0.25rem;
@@ -1052,9 +1041,9 @@ blockquote a:hover, blockquote a:focus, blockquote a:active {
 
 figure figcaption,
 figure figcaption h4 {
-  color: rgba(15, 19, 23, 0.5);
+  color: rgba(11, 28, 46, 0.5);
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -1071,7 +1060,7 @@ figure figcaption h4 {
 
 .scrolled {
   background-color: #fff;
-  color: #0f1317;
+  color: #0b1c2e;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   background: #fff;
@@ -1080,23 +1069,22 @@ figure figcaption h4 {
 
 .scrolledColor {
   background-color: #fff;
-  color: #0f1317;
-  background: #0f1317;
+  color: #0b1c2e;
+  background: #0b1c2e;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .scrolledBtnPrimary {
-  color: #0F1317;
+  color: #0b1c2e;
   padding: 0.5rem 1rem;
-  border: solid 1px #fff;
   background-color: transparent;
-  border: 1px solid #0F1317;
+  border: 1px solid #0b1c2e;
   -webkit-transition: 500ms;
   transition: 500ms;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #0F1317;
+  -webkit-text-fill-color: #0b1c2e;
 }
 
 .scrolledBtnPrimary:hover {

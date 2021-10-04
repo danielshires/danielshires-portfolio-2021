@@ -4,7 +4,7 @@
 const headerTag = document.querySelector("header")
 const navBrand = document.querySelector("a.navbar-brand")
 const navBrandLink = document.querySelectorAll("a.nav-link")
-const navButton = document.querySelector("a.btn")
+const navButtonPrimary = document.querySelector("a.btn-primary")
 const sections = document.querySelectorAll("section")
 
 const toggleHeader = function () {
@@ -15,7 +15,6 @@ const toggleHeader = function () {
 
         headerTag.classList.add("scrolled")
         navBrand.classList.add("scrolledColor")
-        navButton.classList.add("scrolledBtnPrimary")
         navBrandLink.forEach(i => {
             i.classList.add("scrolledColor")
         });
@@ -23,8 +22,6 @@ const toggleHeader = function () {
     } else {
         headerTag.classList.remove("scrolled")
         navBrand.classList.remove("scrolledColor")
-        navButton.classList.remove("scrolledBtnPrimary")
-
         navBrandLink.forEach(i => {
             i.classList.remove("scrolledColor")
         });
