@@ -2,18 +2,18 @@
 
 @font-face {
     font-family: 'PX-Grotesk';
-    src: url("/fonts/Px-Grotesk-Regular.woff2") format("woff2"),
-        url("../../../Respources/fonts/Px-Grotesk-Regular.woff") format("woff"),
-        url("../../../Resfonts/fonts/Px-Grotesk-Regular.ttf") format("truetype");
+    src: url("/fonts/Px-Grotesk/Px-Grotesk-Regular.woff2") format("woff2"),
+        url("/fonts/Px-Grotesk/Px-Grotesk-Regular.woff") format("woff"),
+        url("/fonts/Px-Grotesk/Px-Grotesk-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PX-Grotesk";
-    src: url("/fonts/Px-Grotesk-Bold.woff2") format("woff2"),
-        url("/fonts/Px-Grotesk-Bold.woff") format("woff"),
-        url("/fonts/Px-Grotesk-Bold.ttf") format("truetype");
+    src: url("/fonts/Px-Grotesk/Px-Grotesk-Bold.woff2") format("woff2"),
+        url("/fonts/Px-Grotesk/Px-Grotesk-Bold.woff") format("woff"),
+        url("/fonts/Px-Grotesk/Px-Grotesk-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -122,7 +122,7 @@ $container-max-widths: (sm: 540px,
 // Colors
 
 $primary-color: #00254F;
-$primary-text-color: #0b1c2e;
+$primary-text-color: #0F1317;
 $primary-text-color-light: #567492;
 $primary-gradient: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
 $primary-pink: #FF00E0;
@@ -201,7 +201,6 @@ html {
     @include media-breakpoint-up(xl) {
         font-size: 140%;
     }
-
 
 }
 
