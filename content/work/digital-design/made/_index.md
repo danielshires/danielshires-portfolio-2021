@@ -8,7 +8,7 @@ date: 2018-09-16T08:53:47-05:00
 draft: false
 keywords: "Digital Design"
 readingTime: ""
-heroImage: /work/digital-design/images/made/Made-Project-Tiles-.jpg
+heroImage: /../img/digital-design/images/made/Made-Project-Tiles-.webp
 heroAlt: "Made"
 tagRole: "Digital Design"
 tagDuration: "2017-2018"
@@ -28,25 +28,25 @@ tagTools: "InDesign, Photoshop"
 ***
 
 
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-2.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-3.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-4.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-5.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-6.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-7.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-8.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-9.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-10.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
-{{< figure src="/work/digital-design/images/made/Made-Project-Tiles-11.jpg" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-2.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-3.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-4.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-5.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-6.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-7.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-8.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-9.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-10.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/made/Made-Project-Tiles-11.webp" alt="AW Catalouge" class="py-5 align-centre" >}}
 
 
 <!-- {{< rawhtml >}}
 <div class="row">
 <div class="col-12 col-md-6 py-5 pt-5">
-<img src="/work/digital-design/images/made/Made-Project-Tiles-3.jpg">
+<img src="/../img/digital-design/images/made/Made-Project-Tiles-3.webp">
 </div>
 <div class="col-12 col-md-6 py-5 pt-5">
-<img src="/work/digital-design/images/made/Made-Project-Tiles-4.jpg">
+<img src="/../img/digital-design/images/made/Made-Project-Tiles-4.webp">
 </div>
 </div>
 {{< /rawhtml >}} -->

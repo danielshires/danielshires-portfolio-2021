@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-2021",
+  "name": "danielshires-portfolio-2021",
   "version": "1.0.0",
   "description": "<div align=\"left\"> </div> <h1 align=\"left\">   danielshires.com v2.0 </h1> <p align=\"left\">   The third version of my portfolio website <a href=\"https://danielshires.com\" target=\"_blank\">danielshires.com</a> built with HTML, CSS and a little bit of Javascript</a> and hosted with <a href=\"https://pages.github.com\" target=\"_blank\">Github Pages</a>",
   "main": "index.js",
@@ -17,15 +17,19 @@
   },
   "homepage": "https://github.com/danielshires/danielshires-portfolio-2021#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.8",
     "clean-css": "^5.2.1",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-ext-replace": "^0.3.0",
     "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "i": "^0.3.7",
     "imagemin-webp": "^6.0.0",
+    "postcss-preset-env": "^6.7.0",
     "sass": "^1.42.1"
   },
   "dependencies": {}

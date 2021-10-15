@@ -1,0 +1,44 @@
+{{ define "head" }}
+{{ partial "head" . }}
+{{end}}
+
+{{ define "header" }}
+{{ partial "header" }}
+{{end}}
+
+{{ define "main" }}
+<main data-barba="container">
+<section class="hero-single d-flex flex-column justify-content-center align-items-center position-relative mb-1">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center">
+                <h1>{{ .Title }}</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-8 d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="">{{ .Params.pageDescription }}</p>
+            </div>
+        </div>
+        <div class="row down-arrow">
+            {{ partial "animations/down-arrow" . }}
+        </div>
+</section>
+<section class="section d-flex text-left justify-content-center align-items-center position-relative py-0 mt-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="mt-5">
+                    {{ partial "work/card-column-code" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+{{end}}
+
+{{ define "footer" }}
+{{ partial "contact" . }}
+{{ partial "footer" . }}
+{{end}}

@@ -8,7 +8,7 @@ date: 2018-09-16T08:53:47-05:00
 draft: false
 keywords: "Digital Design"
 readingTime: ""
-heroImage: /work/digital-design/images/scenic/scenic-banner-2.jpg
+heroImage: /../img/digital-design/images/scenic/scenic-banner-2.webp
 heroAlt: "Scenic"
 tagRole: "Digital Design"
 tagDuration: "2019-2020"
@@ -29,16 +29,16 @@ tagTools: "Adobe CS, Figma"
 ***
 
 
-{{< figure src="/work/digital-design/images/scenic/scenic-homepage.jpg" alt="Research and Development" title="Scenic Wonder Desktop Homepage" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/scenic/scenic-homepage.webp" alt="Research and Development" title="Scenic Wonder Desktop Homepage" class="py-5 align-centre" >}}
 
-{{< figure src="/work/digital-design/images/scenic/scenic-homepage-mobile.jpg" alt="Research and Development" title="Scenic Wonder Mobile Homepage" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/scenic/scenic-homepage-mobile.webp" alt="Research and Development" title="Scenic Wonder Mobile Homepage" class="py-5 align-centre" >}}
 
-{{< figure src="/work/digital-design/images/scenic/scenic-emails.jpg" alt="Research and Development" title="Email Designs" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/scenic/scenic-emails.webp" alt="Research and Development" title="Email Designs" class="py-5 align-centre" >}}
 
-<!-- {{< figure src="/work/digital-design/images/scenic/scenic-azure-homepage.jpg" alt="Research and Development" title="Emerald Azure Launch Homepage"  class="py-5 align-centre" >}}
+<!-- {{< figure src="/../img/digital-design/images/scenic/scenic-azure-homepage.webp" alt="Research and Development" title="Emerald Azure Launch Homepage"  class="py-5 align-centre" >}}
 
-{{< figure src="/work/digital-design/images/scenic/scenic-azure-booking.jpg" alt="Research and Development" title="Emerald Azure 'Life on Board" class="py-5 align-centre" >}} -->
+{{< figure src="/../img/digital-design/images/scenic/scenic-azure-booking.webp" alt="Research and Development" title="Emerald Azure 'Life on Board" class="py-5 align-centre" >}} -->
 
-{{< figure src="/work/digital-design/images/scenic/scenic-display-ads-01.jpg" alt="Research and Development" title="Digital Display Ads – Scenic River Cruising" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/scenic/scenic-display-ads-01.webp" alt="Research and Development" title="Digital Display Ads – Scenic River Cruising" class="py-5 align-centre" >}}
 
-{{< figure src="/work/digital-design/images/scenic/scenic-display-ads-02.jpg" alt="Research and Development" title="Digital Display Ads – Scenic Eclipse" class="py-5 align-centre" >}}
+{{< figure src="/../img/digital-design/images/scenic/scenic-display-ads-02.webp" alt="Research and Development" title="Digital Display Ads – Scenic Eclipse" class="py-5 align-centre" >}}

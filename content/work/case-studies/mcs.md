@@ -6,7 +6,7 @@ date: 2018-09-16T08:53:47-05:00
 draft: false
 keywords: "UX/UI"
 readingTime: ""
-heroImage: /work/case-studies/images/mcs/mcs-hero.jpg
+heroImage: /../img/case-studies/images/mcs/mcs-hero.webp
 heroAlt: "My Care Space"
 tagRole: "UX/UI Design"
 tagDuration: "6 Weeks (Jan 21')"
@@ -29,7 +29,7 @@ The team had a problem. They were unsure if people found the website easy to use
 > 
 > One of their key products is connecting disabled clients with disability service providers through a 'VIP' matching service. 
 
-{{< figure src="/work/case-studies/images/mcs/mcs-homepage-old.jpg" alt="MyCareSpace Homepage" class="pt-3 pb-5 align-centre" title="The MyCareSpace homepage.">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-homepage-old.webp" alt="MyCareSpace Homepage" class="pt-3 pb-5 align-centre" title="The MyCareSpace homepage.">}}
 
 #### The Goal
 
@@ -50,7 +50,7 @@ We also needed to understand more about the users of MyCareSapce, their feelings
 For this project, our team of five used the double diamond technique to help guide our decisions and to help provide a framegwork for developing a human-centred design.
 
 
-{{< figure src="https://images.squarespace-cdn.com/content/v1/5fe0857f6394b41d64288ee7/1619313221196-BZFBUHRB5HCHQPSOHJVX/double+diamond-01.png" alt="My Care Space" class="pt-3 pb-5 align-centre">}} -->
+{{< figure src="https://images.squarespace-cdn.com/content/v1/5fe0857f6394b41d64288ee7/1619313221196-BZFBUHRB5HCHQPSOHJVX/double+diamond-01.webp" alt="My Care Space" class="pt-3 pb-5 align-centre">}} -->
 
 
 ***
@@ -71,7 +71,7 @@ Our goals were:
 
 * To run a short task analysis to see how users would go about contacting MyCareSpace
 
-{{< figure src="/work/case-studies/images/mcs/mcs-interviews.png" alt="My Care Space" class="py-3 align-centre" title="Users interviews with Raj, Mary and Julie">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-interviews.webp" alt="My Care Space" class="py-3 align-centre" title="Users interviews with Raj, Mary and Julie">}}
 
 ***
 
@@ -83,7 +83,7 @@ After the research phase, it was time to bring together all of our findings and 
 
 We made notes on a shared Miro board and used affinity mapping to help organise the data into groups and themes.
 
-{{< figure src="/work/case-studies/images/mcs/mcs-affinity-map.png" alt="My Care Space" class="pt-3 pb-5 align-centre">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-affinity-map.webp" alt="My Care Space" class="pt-3 pb-5 align-centre">}}
 
 #### Key Insights
 
@@ -94,21 +94,21 @@ We learnt through talking to users that there were some consistent themes and is
 
      The website homepage was confusing, the brand messaging was unclear and the imagery did not tell a story. 
 
-{{< figure src="/work/case-studies/images/mcs/mcs-homepage-old.jpg" alt="MyCareSpace Homepage" class="pt-3 pb-5 align-centre" title="MyCareSpace Homepage">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-homepage-old.webp" alt="MyCareSpace Homepage" class="pt-3 pb-5 align-centre" title="MyCareSpace Homepage">}}
 
 
 2. __The VIP form was unclear and too hard to read.__
  
     When faced with filling out a form to contact MyCareSpace, users were put off by the number of fields to complete and decided to exit the page instead.
  
-{{< figure src="/work/case-studies/images/mcs/mcs-vipform-old-v2.jpg" alt="MyCareSpace VIP Page" class="pt-3 pb-5 align-centre" title="The 'VIP Connection' page contained multiple fields for inputting data.">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-vipform-old-v2.webp" alt="MyCareSpace VIP Page" class="pt-3 pb-5 align-centre" title="The 'VIP Connection' page contained multiple fields for inputting data.">}}
 
 
 3. __The contact number was too hard to find. When it was shown, it was too small and not easily visible.__
  
     Users just want to call sometimes, and the number was too hard to find on the website.
 
-{{< figure src="/work/case-studies/images/mcs/mcs-contact-old.jpg" alt="MyCareSpace Contact Page" class="pt-3 pb-5 align-centre" title="The 'Contact' page">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-contact-old.webp" alt="MyCareSpace Contact Page" class="pt-3 pb-5 align-centre" title="The 'Contact' page">}}
 
 
 ***
@@ -117,9 +117,9 @@ We learnt through talking to users that there were some consistent themes and is
 
 Based on our interview we created user personas for the two main visitors to MyCareSpace – carers and clients. This would help us design with the end-users in mind.
 
-{{< figure src="/work/case-studies/images/mcs/mcs-persona-carer.jpg" alt="The Carer" class="pt-5 pb-2 align-centre" title="The Carer">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-persona-carer.webp" alt="The Carer" class="pt-5 pb-2 align-centre" title="The Carer">}}
 
-{{< figure src="/work/case-studies/images/mcs/mcs-persona-client.jpg" alt="The Client" class="pb-5 align-centre" title="The Client">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-persona-client.webp" alt="The Client" class="pb-5 align-centre" title="The Client">}}
 
 ***
 
@@ -175,7 +175,7 @@ When brainstorming ideas we came up with the following features and requirements
 
 5. To provide resolution at the end of the form, and reassure users that MyCareSpace would reply quickly.
 
- {{< figure src="/work/case-studies/images/mcs/mcs-ideation.jpg" alt="Ideation" class="pt-3 pb-5 align-centre" title="Our team brainstormed ideas and shared using the Crazy 8's technique">}}
+ {{< figure src="/../img/case-studies/images/mcs/mcs-ideation.webp" alt="Ideation" class="pt-3 pb-5 align-centre" title="Our team brainstormed ideas and shared using the Crazy 8's technique">}}
 
 #### User Journey
 
@@ -183,7 +183,7 @@ For the user journey, we started with a basic user flow that would highlight the
 
 We wanted to give the users the control to go back when needed, and also to review the form at the end before the pressed submit.
 
- {{< figure src="/work/case-studies/images/mcs/mcs-userjourney.png" alt="User Journey" class="pt-3 pb-5 align-centre" title="We created the user journey collaboratively using Miro">}}
+ {{< figure src="/../img/case-studies/images/mcs/mcs-userjourney.webp" alt="User Journey" class="pt-3 pb-5 align-centre" title="We created the user journey collaboratively using Miro">}}
 
 
  ## 🚀 Deliver
@@ -196,7 +196,7 @@ We wanted to give the users the control to go back when needed, and also to revi
      
      Overall, we felt it was important to simplify and reduce the amount of clutter on the homepage. 
 
- {{< figure src="/work/case-studies/images/mcs/mcs-homepage-new.jpg" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
+ {{< figure src="/../img/case-studies/images/mcs/mcs-homepage-new.webp" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
 
 * __Updated messaging__
 
@@ -204,7 +204,7 @@ We wanted to give the users the control to go back when needed, and also to revi
 
      We also removed a lot of the clutter around the search bar, and added a direct CTA to the free matching service.
      
- {{< figure src="/work/case-studies/images/mcs/mcs-routes.jpg" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="Two clear CTAs reduce the amount of time a user has to make a decision.">}}
+ {{< figure src="/../img/case-studies/images/mcs/mcs-routes.webp" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="Two clear CTAs reduce the amount of time a user has to make a decision.">}}
 
 
 * __Call When You Need To__
@@ -213,7 +213,7 @@ We wanted to give the users the control to go back when needed, and also to revi
    
    So we added a contact number to the site header, __to give users a direct way of contacting MyCareSpace from all pages on the website__.
 
-{{< figure src="/work/case-studies/images/mcs/mcs-contact-number.jpg" alt="Contact" class="pt-3 pb-5 align-centre">}}
+{{< figure src="/../img/case-studies/images/mcs/mcs-contact-number.webp" alt="Contact" class="pt-3 pb-5 align-centre">}}
 
 
  #### The New Matching Service
@@ -224,13 +224,13 @@ We wanted to give the users the control to go back when needed, and also to revi
   
   We also provided social proof using large marketing images, with quotes that re-affirmed the success of the service.
 
-  {{< figure src="/work/case-studies/images/mcs/form/mcs-form-intro.jpg" alt="Contact Form Introduction" class="pt-3 pb-5 align-centre" title="The new form keeps all information on a single page, with no scrolling required">}}
+  {{< figure src="/../img/case-studies/images/mcs/form/mcs-form-intro.webp" alt="Contact Form Introduction" class="pt-3 pb-5 align-centre" title="The new form keeps all information on a single page, with no scrolling required">}}
 
 * __Segmenting the Form__
     
    Our users were put off by the long form on the VIP page – so we broke up the form into smaller chunks and reduced the overall cognitive load.
 
-{{< figure src="/work/case-studies/images/mcs/form/mcs-form-01.jpg" alt="Contact Form Introduction" class="pt-3 pb-5 align-centre" title="We added navigation at the top of form to show users their progress through the form">}}
+{{< figure src="/../img/case-studies/images/mcs/form/mcs-form-01.webp" alt="Contact Form Introduction" class="pt-3 pb-5 align-centre" title="We added navigation at the top of form to show users their progress through the form">}}
 
 * __Multiple Choice__
 
@@ -245,35 +245,35 @@ We wanted to give the users the control to go back when needed, and also to revi
 
         <div class="swiper-slide">
           <figure>
-         <img src="/work/case-studies/images/mcs/form/mcs-form-02.jpg" alt="Trulli" style="width:100%">
+         <img src="/../img/case-studies/images/mcs/form/mcs-form-02.webp" alt="Trulli" style="width:100%">
         <figcaption>Users can select from multiple-choice options.</figcaption>
         </figure>
         </div>
 
           <div class="swiper-slide">
           <figure>
-         <img src="/work/case-studies/images/mcs/form/mcs-form-02a.jpg" alt="Trulli" style="width:100%">
+         <img src="/../img/case-studies/images/mcs/form/mcs-form-02a.webp" alt="Trulli" style="width:100%">
         <figcaption>The 'next' button only appears when a user makes a selection.</figcaption>
         </figure>
         </div>
 
         <div class="swiper-slide">
           <figure>
-         <img src="/work/case-studies/images/mcs/form/mcs-form-03.jpg" alt="Trulli" style="width:100%">
+         <img src="/../img/case-studies/images/mcs/form/mcs-form-03.webp" alt="Trulli" style="width:100%">
         <figcaption>Live search allows a user to start typing</figcaption>
         </figure>
         </div>
 
          <div class="swiper-slide">
           <figure>
-         <img src="/work/case-studies/images/mcs/form/mcs-form-04.jpg" alt="Trulli" style="width:100%">
+         <img src="/../img/case-studies/images/mcs/form/mcs-form-04.webp" alt="Trulli" style="width:100%">
         <figcaption>And filter the results immediately</figcaption>
         </figure>
         </div>
 
            <div class="swiper-slide">
           <figure>
-         <img src="/work/case-studies/images/mcs/form/mcs-form-05a.jpg" alt="Trulli" style="width:100%">
+         <img src="/../img/case-studies/images/mcs/form/mcs-form-05a.webp" alt="Trulli" style="width:100%">
         <figcaption>The form offers a step-by-step process for collecting data</figcaption>
         </figure>
         </div>
@@ -290,13 +290,13 @@ We wanted to give the users the control to go back when needed, and also to revi
     
    The review screen before submission provides the user with a reminder of their selections, and allows them to edit each section of the form.
      
- {{< figure src="/work/case-studies/images/mcs/form/mcs-form-review.jpg" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
+ {{< figure src="/../img/case-studies/images/mcs/form/mcs-form-review.webp" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
 
  * __Final State__
     
    The the final confirm screen reassures the user that MCS will get back to them in 24 hours – and provides additional steps for them to continue their journey.
      
- {{< figure src="/work/case-studies/images/mcs/form/mcs-form-end-state.jpg" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
+ {{< figure src="/../img/case-studies/images/mcs/form/mcs-form-end-state.webp" alt="New Hompepage" class="pt-3 pb-5 align-centre" title="The new homepage kept the typeface and colour scheme from the existing brand.">}}
 
 
 
