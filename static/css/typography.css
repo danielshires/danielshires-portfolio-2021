@@ -1,4 +1,5 @@
-@import url("https://css.gg/chevron-right.css");
+@import url('https://cdn.jsdelivr.net/npm/css.gg/icons/all.css');
+
 @font-face {
   font-family: 'PX-Grotesk';
   src: url("/fonts/Px-Grotesk/Px-Grotesk-Regular.woff2") format("woff2"), url("/fonts/Px-Grotesk/Px-Grotesk-Regular.woff") format("woff"), url("/fonts/Px-Grotesk/Px-Grotesk-Regular.ttf") format("truetype");
@@ -11,12 +12,6 @@
   src: url("/fonts/Px-Grotesk/Px-Grotesk-Bold.woff2") format("woff2"), url("/fonts/Px-Grotesk/Px-Grotesk-Bold.woff") format("woff"), url("/fonts/Px-Grotesk/Px-Grotesk-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 @font-face {
@@ -47,4 +42,9 @@
   /* Legacy iOS */
   font-weight: 500;
   font-style: normal;
+}
+
+:root {
+  --title-font: "Circular";
+  --body-font: "Circular";
 }

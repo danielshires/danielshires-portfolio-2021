@@ -13,11 +13,19 @@ var webp = require('imagemin-webp')
 var extReplace = require('gulp-ext-replace');
 // Concat
 var concat = require('gulp-concat');
+// Webpack
+var webpack = require('webpack-stream')
 
+
+// compile js using webpack
+// watch and make changes
+// make defaul task (gulp)
 gulp.task('css', function () {
     // place code for your default task here
     return gulp.src([
             './static/css/typography.css',
+            './static/css/reset.css',
+            './static/css/normalize.css',
             './static/css/root.css',
             './static/css/styles.css',
         ])
@@ -26,7 +34,6 @@ gulp.task('css', function () {
             postcss([
                 require("autoprefixer"),
                 require("postcss-preset-env")({
-
                     stage: 1,
                     browsers: ["IE 11", "last 2 versions"]
                 }),
@@ -36,22 +43,6 @@ gulp.task('css', function () {
         .pipe(sourceMaps.write())
         .pipe(gulp.dest('./static/css'))
 })
-
-// gulp.task('sass', function () {
-//     // place code for your default task herein
-//     return gulp.src('./static/css/styles.scss')
-//         .pipe(sourceMaps.init())
-//         // .pipe(sass().on('error', sass.logError))
-//         .pipe(cleanCSS())
-//         .pipe(sourceMaps.write())
-//         .pipe(gulp.dest('./static/css/.'))
-// })
-
-// gulp.task('images', function () {
-//     return gulp.src('./static/images/**/**/*')
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('./static/img-min'))
-// })
 
 gulp.task("imageswebp", function () {
     return gulp.src("./static/images/**/*")
@@ -67,6 +58,19 @@ gulp.task("imageswebp", function () {
         .pipe(gulp.dest("./static/img"));
 });
 
+gulp.task("js", function () {
+    gulp.src('./static/js/index.js')
+        .pipe(webpack({
+            mode: 'development',
+            devtool: 'source-map',
+            output: {
+                filename: "app.js",
+            },
+        
+        }))
+        .pipe(gulp.dest('./static/js/'));
+})
+
 gulp.task("imageswebpContent", function () {
     return gulp.src("./content/work/**/*")
         .pipe(
@@ -81,12 +85,13 @@ gulp.task("imageswebpContent", function () {
         .pipe(gulp.dest("./content/img"));
 });
 
-
 gulp.task('watch', function () {
+    gulp.watch('./static/css/typography.css', gulp.series('css'))
     gulp.watch('./static/css/styles.css', gulp.series('css'))
-    //   gulp.watch('./static/images/**/**/*', gulp.series('images'))
+    gulp.watch('./static/css/root.css', gulp.series('css'))
     gulp.watch('./static/images/**/*', gulp.series('imageswebp'))
     gulp.watch('./content/work/**/*', gulp.series('imageswebpContent'))
+    gulp.watch('./static/js/*', gulp.series('js'))
 })
 
 gulp.task('default', gulp.series('css', 'watch'))

@@ -29,7 +29,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-center">
                 <div class="mt-5">
-                    {{ partial "work/card-column-wip" . }}
+                    {{ partial "work/card-column-all" . }}
                 </div>
             </div>
         </div>
@@ -41,4 +41,12 @@
 {{ define "footer" }}
 {{ partial "contact" . }}
 {{ partial "footer" . }}
+{{end}}
+
+{{ define "index-scripts" }}
+{{ partial "scripts/page-scripts" . }}
+{{end}}
+
+{{ define "scripts" }}
+{{ partial "scripts" . }}
 {{end}}

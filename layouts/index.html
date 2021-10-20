@@ -7,7 +7,7 @@
 {{end}}
 
 {{ define "main" }}
-<main data-barba="container" data-barba-namespace="index">
+<main data-barba="container" data-barba-namespace="index" index>
 {{ partial "homepage" . }}
 </main>
 {{end}}
@@ -16,3 +16,11 @@
 {{ partial "contact" . }}
 {{ partial "footer" . }}
 {{end}} 
+
+{{ define "index-scripts" }}
+{{ partial "scripts/index-scripts" }}
+{{end}}
+
+{{ define "scripts" }}
+{{ partial "scripts" . }}
+{{end}}

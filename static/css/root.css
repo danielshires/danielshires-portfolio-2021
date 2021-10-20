@@ -1,21 +1,23 @@
-@custom-media --mq-medium (max-width: 800px);
+@custom-media --mq-sm (min-width: 768px);
+@custom-media --mq-md (min-width: 768px);
+@custom-media --mq-lg (min-width: 992px);
+@custom-media --mq-xl (min-width: 1200px);
+@custom-media --mq-xxl (min-width: 1400px);
 
 :root {
-    --primary-color: #00254F;
+  /* Color Styles */
     --primary-text-color: #0F1317;
     --primary-text-color-light: #567492;
-    --primary-gradient: linear-gradient(to right, #FF00E0 0%, #FF0029 100%);
+    --text-white: #ffffff;
+    --primary-gradient: linear-gradient(90deg, #ff00e0, #ff00c4, #ff00a9, #ff008d, #ff0073, #ff005a, #ff0042, #ff0029);
     --primary-pink: #FF00E0;
     --primar-red: #FF0029;
+    /* Testimonial */
     --testimonial-img-size-mobile: 150px;
     --testimonial-img-size-md: 200px;
     --testimonial-img-size-lg: 240px;
+    /* Animation */
     --timing: 150ms;
-    --bezier: cubic-bezier(0.12, 0, 0.39, 0)
+    --bezier: cubic-bezier(0.12, 0, 0.39, 0);
+    --ggs: 1;
   }
-
-  /* @media (--mq-medium) {
-      :root {
-        /* --primary-text-color: #FF0029; 
-      }
-  }*/
