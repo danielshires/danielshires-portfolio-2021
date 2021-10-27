@@ -555,7 +555,7 @@ header .mobile-nav {
 } */
 
 .rounded {
-  border-radius: 1rem !important;
+  border-radius: 0rem !important;
 }
 
 a.card-link {
@@ -626,7 +626,7 @@ a.card-link:active {
 .portfolio-card {
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0rem;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
@@ -645,14 +645,14 @@ a.card-link:active {
   height: auto;
   -webkit-transform: scale(1);
   transform: scale(1);
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 .portfolio-card:hover img,
 .portfolio-card:focus img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 .coming-soon {
@@ -669,7 +669,7 @@ a.card-link:active {
 .coming-soon:focus img {
   -webkit-transform: scale(1);
   transform: scale(1);
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 @media (--mq-md) {
@@ -1057,7 +1057,7 @@ blockquote {
   padding: 1.2rem 1.3rem 1.2rem 1.5rem;
   margin: 2rem 0 3rem 0;
   border: 1px solid var(--primary-text-color);
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 blockquote p {
