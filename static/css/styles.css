@@ -892,7 +892,7 @@ a.card-link:active {
 section {
   position: relative;
   min-height: 25vh;
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 @media (--mq-md) {
