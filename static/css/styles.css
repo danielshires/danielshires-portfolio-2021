@@ -274,7 +274,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 72px;
   z-index: 100;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -932,7 +932,7 @@ section {
 .hero-single {
   height: 75vh;
   width: 100%;
-  margin-top: 0;
+  margin-top: 72px;
 }
 
 .hero {
