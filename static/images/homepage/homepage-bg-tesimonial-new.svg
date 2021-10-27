@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3200px" height="983px" viewBox="0 0 3200 983" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 37 Copy</title>
+    <defs>
+        <linearGradient x1="100%" y1="53.3122072%" x2="-26.0158632%" y2="44.0845725%" id="linearGradient-1">
+            <stop stop-color="#FF00E0" offset="0%"></stop>
+            <stop stop-color="#FF00DD" offset="0%"></stop>
+            <stop stop-color="#FF0029" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="76.7947049%" x2="50%" y2="131.081163%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFEFE" stop-opacity="0.996390654" offset="0%"></stop>
+            <stop stop-color="#333333" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="52.4836426%" y1="46.6877928%" x2="53.1162567%" y2="53.1037023%" id="linearGradient-3">
+            <stop stop-color="#152F4F" offset="0%"></stop>
+            <stop stop-color="#08203C" offset="99.9112216%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="0 166.279053 3200 -2.27373675e-13 3200 676.976074 0 823.614014"></polygon>
+        <pattern id="pattern-5" width="8" height="8" x="-8" y="-8" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-6"></use>
+        </pattern>
+        <image id="image-6" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAYRpQ0NQSUNDIFByb2ZpbGUAACiRlZG9S8NQFMVPKlKE+jEUEUEIKJ2q1AqiIEKbQYQOtXRQ0SFN0g+oSUhiVXRUcCw41UnaxcFZ1/4BioOiIOImuBddtMT7kmoqouKBcH+577533z0P8B2Lul709QFrqmWk5uL84tIy739EF4bgSJRMPZZMJhh/xK96uQHH4tUoO+v7+q8KyIopAVyQ2JJ0wyLeJx7esHTGJ8RBgy5FXGecc/maccblJ6cmnRKI34h7SlKO9voCxBFVLqjEM8SzUl6UiXeIw5m2+lwbu/dxNCiIxULGEC1F5pk1glbUDFMXJeWfQ/4lS9m0WBQ0fcso5PIWHyMnFX5elcbCfDQSHQfYu7jVjQXHb67/3MtpVWDqGegoe7lMBTjbAwbuvNzIEdC7C5xeSutGqdWeA3V3PWv9c5+En9j11dEkULsF0ttA4gKoHAKhLPVZAZLdlJ+mCVe9z5WZnYi6ZwXiQOeDbTdCgP8AaJZt+7Vq280azXMP1NV3U/1vr1U+NOoAAAA4ZVhJZk1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAKgAgAEAAAAAQAAAAigAwAEAAAAAQAAAAgAAAAAtkxZaAAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC"></image>
+    </defs>
+    <g id="v1-Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-37-Copy" transform="translate(0.000000, 0.385986)">
+            <polygon id="Rectangle" fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" points="0 166.279053 3200 -2.27373675e-13 3200 713.658203 -5.55111512e-15 823.614014"></polygon>
+            <g id="Rectangle">
+                <use fill="#FFFFFF" xlink:href="#path-4"></use>
+                <use fill="url(#linearGradient-2)" style="mix-blend-mode: multiply;" xlink:href="#path-4"></use>
+                <use fill="url(#pattern-5)" xlink:href="#path-4"></use>
+                <use fill="url(#linearGradient-3)" style="mix-blend-mode: multiply;" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

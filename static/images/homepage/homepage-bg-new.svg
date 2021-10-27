@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3200px" height="1859px" viewBox="0 0 3200 1859" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 37</title>
+    <defs>
+        <linearGradient x1="50%" y1="76.7947049%" x2="50%" y2="131.081163%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFEFE" stop-opacity="0.996390654" offset="0%"></stop>
+            <stop stop-color="#333333" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 3200 0 3200 1712.36206 0 1859"></polygon>
+        <pattern id="pattern-3" width="8" height="8" x="-8" y="-8" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-4"></use>
+        </pattern>
+        <image id="image-4" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAYNpQ0NQSUNDIFByb2ZpbGUAACiRlZG9S8NQFMVPKlKE+jEUEaeA0qlKrSAKIrQZROhQSwcVHdIkTQs1CUmsio4KjgWnOkm7ODjr2j9AcVAURNwE96KLlnhfUo0iKh4I95f77nv33fOAwJFoGKVAH7Cq2WZmNskvLC7xwQd0gXJMomQZiXQ6xfg9ftXzNTgWL0fYWd/Xf1VIViwJ4MLEtmSYNvEe8dC6bTA+Jg6bdCniBmPV4yvGOY8f3ZpsRiB+Je4pSyrtDYSIY5pc1IiniWekgigTbxNHc5/q1U/s3cfVoCCWijlTtBWZZ9YIekk3LUOUlH8O+ZdsZcNmUdCNTbOoFmw+QU4q/JwmjUb5eCw+BrB38aqb867fXP+Zn9NrwOQT0FHxc7kqcLoLDNz6ueFDoHcHOLmQ1sxyuz0H6u551v7nPgg/seerqwmgfgNkt4DUOVA9ACJ56rMMpLspP0UTrvifJys/HvfOCiWBznvHaUaA4D7QqjjOS81xWnWa5w5oaG8y7m+iWbixIwAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAACKADAAQAAAABAAAACAAAAAC2TFloAAAAF0lEQVQYGWNgYGD4D8VAChMwYQoNRxEABPACAUYhcQ4AAAAASUVORK5CYII="></image>
+        <linearGradient x1="100%" y1="66.8744189%" x2="-26.0158632%" y2="19.8631775%" id="linearGradient-5">
+            <stop stop-color="#FF00E0" offset="0%"></stop>
+            <stop stop-color="#FF00DD" offset="0%"></stop>
+            <stop stop-color="#FF0029" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="v1-Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-37">
+            <g id="Rectangle">
+                <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+                <use fill="url(#pattern-3)" xlink:href="#path-2"></use>
+                <use fill="#00254F" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+            </g>
+            <polygon id="Rectangle" fill="url(#linearGradient-5)" style="mix-blend-mode: multiply;" points="0 0 3200 0 3200 1749.04419 0 1859"></polygon>
+        </g>
+    </g>
+</svg>
