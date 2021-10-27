@@ -473,11 +473,11 @@ header .mobile-nav {
 
 .badge-pill {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 0.8em 0.6em;
+  padding: 1em 0.8em;
   color: white;
   line-height: 0;
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 .btn {
@@ -930,7 +930,7 @@ section {
 }
 
 .hero-single {
-  height: 90vh;
+  height: 75vh;
   width: 100%;
   margin-top: 0;
 }
@@ -943,13 +943,17 @@ section {
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   line-height: 100%;
   color: #fff;
   background: -webkit-linear-gradient(#fff, #FFf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (--mq-md) {
+    font-size: 3.5em;
+  }
 }
 
 .hero h1 span {
