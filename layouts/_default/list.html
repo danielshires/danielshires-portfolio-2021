@@ -7,7 +7,7 @@
 {{end}}
 
 {{ define "main" }}
-<main data-barba="container">
+<main data-barba="container" data-barba-namespace="list">
 <section class="hero-single d-flex flex-column justify-content-center align-items-center position-relative mb-1">
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -29,7 +29,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 d-flex justify-content-center">
                 <div class="mt-5">
-                    {{ partial "work/card-column-wip" . }}
+                    {{ partial "work/card-column-all" . }}
                 </div>
             </div>
         </div>
@@ -39,6 +39,13 @@
 {{end}}
 
 {{ define "footer" }}
-{{ partial "contact" . }}
 {{ partial "footer" . }}
+{{end}}
+
+{{ define "index-scripts" }}
+{{ partial "scripts/page-scripts" . }}
+{{end}}
+
+{{ define "scripts" }}
+{{ partial "scripts" . }}
 {{end}}

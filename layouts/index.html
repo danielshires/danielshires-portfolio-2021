@@ -13,6 +13,13 @@
 {{end}}
 
 {{ define "footer" }}
-{{ partial "contact" . }}
 {{ partial "footer" . }}
 {{end}} 
+
+{{ define "index-scripts" }}
+{{ partial "scripts/index-scripts" }}
+{{end}}
+
+{{ define "scripts" }}
+{{ partial "scripts" . }}
+{{end}}

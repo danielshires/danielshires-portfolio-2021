@@ -4,19 +4,24 @@
 {{end }}
 
 <body>
+    {{ block "header" . }}
+    {{end }}
 
-{{ block "header" . }}
-{{end }}
+        <div data-barba="wrapper">
 
-<div data-barba="wrapper">
+            {{ block "main" . }}
+            {{end }}
 
-{{ block "main" . }}
-{{end }}
+        </div>
 
-</div>
+    {{ block "footer" . }}
+    {{end }}
 
-{{ block "footer" . }}
-{{end }}
+    {{ block "index-scripts" . }}
+    {{end}}
+
+    {{ block "scripts" . }}
+    {{end}}
 
 </body>
 

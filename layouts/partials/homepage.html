@@ -1,53 +1,48 @@
   <!-- Hero Section -->
   <section id="home" header-light="yes"
-    class="container-fluid d-flex flex-column justify-content-center align-items-center hero position-relative mt-0">
+    class="d-flex flex-column justify-content-center align-items-center hero position-relative mt-0">
     <div class="background-image"></div>
-    <div class="row d-flex justify-content-center hero-text mt-md-0 hero-animation">
-
-      <!-- Hero Text -->
-
-      <div
-        class="col-12 col-md-10 text-center mx-auto hero-text-heading mb-2 w-100 d-flex flex-column justify-content-center align-items-center" data-scroll data-scroll-sticky>
-        <h1 class="title mt-0 py-1" style="cursor: default;">
-          <span>Daniel Shires</span><br>
-          UX/UI Designer & Developer</span>
-        </h1>
+    <div class="container d-flex justify-content-center flex-column">
+      <div class="row hero-text mt-md-0">
+        <div
+          class="col-12 col-md-10 text-center mx-auto hero-text-heading mb-2 w-100 d-flex flex-column justify-content-center align-items-center">
+          <h6 class="mb-0 mb-md-3">UX/UI Designer & Web Developer</h6>
+          <h1 class="title m-0 py-1">
+            <span>UX. UI. Code</span><br>
+            I've got you covered</span>
+          </h1>
+        </div>
+        <div
+          class="col-12 col-md-8 col-lg-7 text-center mx-auto mb-2 w-100 d-flex flex-column justify-content-center align-items-center">
+          <p>Hi my name's Dan. I'm a designer who uses the principles of human centred design to create
+            simple,
+            impactful experiences in pixels & code.
+          </p>
+        </div>
       </div>
-      <div
-        class="col-12 col-md-8 col-lg-6 col-xl-4 text-center mx-auto mb-2 w-100 d-flex flex-column justify-content-center align-items-center">
-        <p class="mt-1">Hi my name's Dan. I'm a designer who uses the principles of human centred design to create simple,
-          impactful experiences in pixels & code.
-        </p>
+
+      <div class="row hero-text mt-4 mb-5">
+        <!-- Buttons -->
+        <div class="col-12 hero-links">
+          <a href="/work" class="btn btn-primary mx-md-3">
+            View work
+          </a>
+          <a href="#contact" class="btn btn-secondary mt-4 mt-md-0 mx-md-3">Contact</a>
+        </div>
       </div>
-    </div>
-
-    <div class="row d-flex justify-content-center hero-text mt-4 mb-5 w-100 hero-animation">
-      <!-- Buttons -->
-      <div class="col-12 hero-links">
-        <a href="/work" class="btn btn-primary mx-md-3">
-          View work
-        </a>
-        <a href="#contact" class="btn btn-secondary mt-4 mt-md-0 mx-md-3">Get in touch</a>
-      </div>
-      </dvi>
 
     </div>
-
-    <div class="row down-arrow down-arrow_hero">
-      <!-- {{ partial "animations/down-arrow" . }} -->
-    </div>
-
   </section>
 
   <!-- Portfolio Work-->
-  <section id="work" class="section d-flex justify-content-center align-items-center fade-up-portfolio">
+  <section id="work" class="d-flex justify-content-center align-items-center fade-up">
     <div class="container">
 
       <!-- Section Heading -->
       <div class="row justify-content-center d-flex flex-column align-items-center pb-5">
         <div class="col-12 col-md-10 col-lg-8">
-          <h2 class="">Featured Work</h2>
-          <p class="">A selection of featured work taken covering UX/UI Design, Digital Design, Commerical and Personal
+          <h2 class="mt-0">Featured Work</h2>
+          <p>A selection of featured work taken covering UX/UI Design, Digital Design, Commerical and Personal
             Projects.
         </div>
       </div>
@@ -59,7 +54,7 @@
   </section>
 
   <!-- Testimonial Gemma -->
-  <section id="testimonial-gemma"
+  <section id="testimonial-gemma fade-up"
     class="section d-flex justify-content-center align-items-center background-image-testimonial py-3 py-md-5">
 
     <!-- Section Heading -->
@@ -67,11 +62,11 @@
       <div class="row d-flex align-items-center px-3 px-md-0">
         <!-- Section Heading -->
         <div class="col-12 col-md-4 col-lg-4">
-          <div class="testimonial-container fade-up-tesimonial">
-            <div class="testimonial-img"></div>
+          <div class="testimonial-container">
+            <div class="scale-up testimonial-img"></div>
           </div>
         </div>
-        <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-tesimonial">
+        <div class="col-12 col-md-8 col-lg-8 testimonial-text">
           <h4 class="mt-5 mt-md-0 text-white">“Daniel is a creative and talented designer and a true
             collaborative team member… I
             strongly recommend Dan as an experienced designer.”</h4>
@@ -86,11 +81,11 @@
   <section id="skillset" class="section d-flex justify-content-center align-items-center">
 
     <!-- Section Heading -->
-    <div class="container fade-up-cards">
+    <div class="container fade-up">
       <div class="row d-flex justify-content-center pb-5">
         <!-- Section Heading -->
         <div class="col-12 col-md-10 col-lg-8 col-xxl-10 ">
-          <h2 class="">My Process</h2>
+          <h2 class="mt-0">My Process</h2>
           <p class="op-5">I utilise HCD prinicples to explore the problem, creative thinking to design the solution,
             and use my technical know-how to deliver the final product.</p>
         </div>
@@ -102,7 +97,7 @@
           <div class="process-card card text-left pt-3 rounded">
             <div class="card-image p-2">
               <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-                style="cursor: pointer;" src="/img/homepage/PNG/Process_Concepts@4x.webp" alt="Card image cap">
+                src="/img/homepage/PNG/Process_Concepts@4x.webp" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title m-0">Explore</h5>
@@ -117,7 +112,7 @@
           <div class="card process-card text-left pt-3 rounded">
             <div class="card-image p-2">
               <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-                style="cursor: pointer;" src="/img/homepage/PNG/Process_Design-Mac@4x.webp" alt="Card image cap">
+                src="/img/homepage/PNG/Process_Design-Mac@4x.webp" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title m-0">Design</h5>
@@ -133,7 +128,7 @@
           <div class="card process-card text-left pt-3 rounded">
             <div class="card-image p-2">
               <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="25" class="card-img-top"
-                style="cursor: pointer;" src="/img/homepage/PNG/Process_Delivery@4x.webp" alt="Card image cap">
+                src="/img/homepage/PNG/Process_Delivery@4x.webp" alt="Card image cap">
             </div>
             <div class="card-body">
               <h5 class="card-title m-0">Launch</h5>
@@ -146,17 +141,17 @@
 
 
     </div>
-
   </section>
 
   <!-- Creative Services -->
   <section id="creative-services" class="section d-flex justify-content-center align-items-center">
 
     <!-- Section Heading -->
-    <div class="container pb-3 fade-up-services">
+    <div class="container pb-3 fade-up">
+      
       <div class="row d-flex justify-content-center pb-3">
         <div class="col-12 col-md-10 col-lg-8 col-xxl-10">
-          <h2 class="">My Skills</h2>
+          <h2 class="mt-0">My Skills</h2>
           <p class="">
             I have a wide-range of
             industry
@@ -166,7 +161,7 @@
       </div>
       <!-- Cards -->
 
-      <div class="row row d-flex justify-content-center pb-5 fade-up-cards">
+      <div class="row row d-flex justify-content-center pb-5 fade-up">
         <div class="col-12 col-md-4 ">
           <div class="card text-center pt-4 border d-block align-items-center border-0">
             <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
@@ -185,7 +180,7 @@
         <div class="col-12 col-md-4 ">
           <div class="card text-center pt-4 border d-block align-items-center border-0">
             <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
-              class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
+              class="card-img-top card-img-top-center w-25" class="card-img-top w-25"
               src="/img/homepage/PNG/Services_Print@4x.webp" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">UX</h5>
@@ -200,7 +195,7 @@
         <div class="col-12 col-md-4 ">
           <div class="card text-center pt-4 border d-block align-items-center border-0">
             <img data-tilt data-tilt-perspective="300" data-tilt-speed="400" data-tilt-max="50"
-              class="card-img-top card-img-top-center w-25" style="cursor: pointer;" class="card-img-top w-25"
+              class="card-img-top card-img-top-center w-25" class="card-img-top w-25"
               src="/img/homepage/PNG/Services_Code@4x.webp" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Code</h5>
@@ -212,8 +207,8 @@
             </div>
           </div>
         </div>
-
       </div>
+    </div>
 
   </section>
 
@@ -226,11 +221,11 @@
     <div class="container py-5 py-md-0">
       <div class="row align-items-center">
         <div class="col-12 col-md-4 col-lg-4">
-          <div class="testimonial-container fade-up-testimonial-made">
+          <div class="testimonial-container fade-up">
             <div class="testimonial-img-jack"></div>
           </div>
         </div>
-        <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up-testimonial-made">
+        <div class="col-12 col-md-8 col-lg-8 testimonial-text fade-up">
           <h4 class="text-white mt-5 mt-md-0">“Daniel has an excellent range of design skills as well
             as a
             passion for typography in all forms. He’s a fantastic team player and was brilliant at nurturing
@@ -242,3 +237,5 @@
     </div>
 
   </section>
+
+  {{ partial "contact" . }}

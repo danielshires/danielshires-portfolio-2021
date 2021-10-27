@@ -7,7 +7,7 @@
 {{end}}
 
 {{ define "main" }}
-<main data-barba="container">
+<main data-barba="container" data-barba-namespace="single">
     {{ partial "work/workTag" . }}
     {{ partial "work/hero" . }}
     <section
@@ -24,6 +24,13 @@
 {{end}}
 
 {{ define "footer" }}
-{{ partial "contact" . }}
 {{ partial "footer" . }}
+{{end}}
+
+{{ define "index-scripts" }}
+{{ partial "scripts/page-scripts" . }}
+{{end}}
+
+{{ define "scripts" }}
+{{ partial "scripts" . }}
 {{end}}
