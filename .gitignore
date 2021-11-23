@@ -1,3 +1,6 @@
 node_modules
 resources
+static/fonts/Pangea/
+static/fonts/Pangea Text/
+static/fonts/Circular-test/
 .DS_Store

@@ -17,6 +17,7 @@
 @font-face {
   font-family: "Circular";
   src: url("/fonts/Circular/CircularStd-Book.woff");
+
   /* IE9 Compat Modes */
   src: url("/fonts/Circular/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/Circular/CircularStd-Book.woff2") format("woff2"), url("/fonts/Circular/CircularStd-Book.woff") format("woff"), url("/fonts/Circular/CircularStd-Book.ttf") format("truetype"), url("/fonts/Circular/CircularStd-Book.svg#svgFontName") format("svg");
   /* Legacy iOS */
