@@ -14,7 +14,7 @@ tagDuration: "6 Weeks (Jan 21')"
 tagTools: " Figma, Miro, Zoom"
 ---
 
-## 📋 Overview
+## 01 Overview
 
 #### The Challenge 
 
@@ -56,7 +56,7 @@ For this project, our team of five used the double diamond technique to help gui
 
 ***
 
-## 🔎 Discover
+## 02 Discover
 
 #### Research
 
@@ -76,7 +76,7 @@ Our goals were:
 
 ***
 
-## 💭 Define 
+## 03 Define 
 
 #### Organising Data
 
@@ -156,7 +156,7 @@ After generating the problem statement, we created several 'How Might We' statem
 
 ***
 
-## ✏️ Develop
+## 04 Develop
 
 #### Ideation
 
@@ -187,7 +187,7 @@ We wanted to give the users the control to go back when needed, and also to revi
  {{< figure src="/../img/case-studies/images/mcs/mcs-userjourney.webp" alt="User Journey" class="pt-3 pb-5 align-centre" title="We created the user journey collaboratively using Miro">}}
 
 
- ## 🚀 Deliver
+ ## 05 Deliver
 
  #### The New Homepage
 
